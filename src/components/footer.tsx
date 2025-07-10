@@ -1,8 +1,9 @@
 "use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Download, Github, Linkedin, Mail, Mountain } from "lucide-react"
+import { Download, Mail, Mountain } from "lucide-react"
 import { AnimatedSection } from "./animated-section"
+import { portfolioData } from "@/lib/data"
 
 export function Footer() {
   return (
@@ -17,13 +18,13 @@ export function Footer() {
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                  <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <a href="mailto:ahmed.flutter.dev@email.com">
+                    <a href={`mailto:${portfolioData.contact.email}`}>
                         <Mail className="mr-2 h-5 w-5" />
                         Email Me
                     </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                    <a href="/ahmed-cv.pdf" download>
+                    <a href={portfolioData.contact.cv} download>
                         <Download className="mr-2 h-5 w-5" />
                         Download CV
                     </a>
@@ -32,12 +33,11 @@ export function Footer() {
             </div>
             <div className="flex items-start justify-start space-y-4 lg:items-center lg:justify-end">
               <div className="flex items-center gap-4">
-                <Link href="#" aria-label="LinkedIn" className="text-muted-foreground transition-colors hover:text-primary">
-                  <Linkedin className="h-8 w-8" />
-                </Link>
-                <Link href="#" aria-label="GitHub" className="text-muted-foreground transition-colors hover:text-primary">
-                  <Github className="h-8 w-8" />
-                </Link>
+                {portfolioData.contact.socials.map((social) => (
+                    <Link key={social.name} href={social.url} aria-label={social.name} className="text-muted-foreground transition-colors hover:text-primary">
+                      <social.icon className="h-8 w-8" />
+                    </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Mountain className="h-6 w-6 text-primary" />
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Ahmed. All rights reserved.
+              &copy; {new Date().getFullYear()} {portfolioData.name}. All rights reserved.
             </p>
           </div>
           <p className="text-sm text-muted-foreground">

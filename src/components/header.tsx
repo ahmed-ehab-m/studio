@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Mountain } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
+import { portfolioData } from "@/lib/data"
 
 export function Header() {
   const scrollToSection = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -16,7 +17,7 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <Mountain className="h-6 w-6 text-primary" />
-          <span className="text-lg font-bold text-foreground">Ahmed's Portfolio</span>
+          <span className="text-lg font-bold text-foreground">{portfolioData.name}'s Portfolio</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <Link href="#about" onClick={scrollToSection('about')} className="transition-colors hover:text-primary" prefetch={false}>

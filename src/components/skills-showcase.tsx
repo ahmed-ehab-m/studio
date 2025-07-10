@@ -3,12 +3,9 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { AnimatedSection } from "./animated-section"
+import { portfolioData } from "@/lib/data"
 
-const skills = {
-  frontend: ["Flutter", "Dart", "React", "Next.js", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"],
-  backend: ["Node.js", "Firebase", "Supabase", "REST APIs", "GraphQL", "PostgreSQL"],
-  tools: ["Git", "GitHub", "VS Code", "Android Studio", "Xcode", "Jira", "Figma"],
-}
+const skills = portfolioData.skills;
 
 export function SkillsShowcase() {
   return (

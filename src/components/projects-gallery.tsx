@@ -6,49 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Github, ExternalLink } from "lucide-react"
 import { AnimatedSection } from "./animated-section"
+import { portfolioData } from "@/lib/data"
 
-const projects = [
-  {
-    title: "E-Commerce App",
-    description: "A full-featured e-commerce mobile application built with Flutter, providing a seamless shopping experience.",
-    tech: ["Flutter", "Firebase", "Stripe API"],
-    category: "Mobile",
-    image: "https://placehold.co/600x400.png",
-    github: "#",
-    live: "#",
-    aiHint: "e-commerce app"
-  },
-  {
-    title: "Task Management Web App",
-    description: "A responsive web application for task management and team collaboration, built with Flutter Web.",
-    tech: ["Flutter Web", "Dart", "Firebase"],
-    category: "Web",
-    image: "https://placehold.co/600x400.png",
-    github: "#",
-    live: "#",
-    aiHint: "task management"
-  },
-  {
-    title: "Fitness Tracker",
-    description: "A mobile app to track workouts, set fitness goals, and monitor progress with detailed analytics.",
-    tech: ["Flutter", "Supabase", "Google Fit API"],
-    category: "Mobile",
-    image: "https://placehold.co/600x400.png",
-    github: "#",
-    live: "#",
-    aiHint: "fitness tracker"
-  },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
-    tech: ["Flutter Web", "Dart"],
-    category: "Web",
-    image: "https://placehold.co/600x400.png",
-    github: "#",
-    live: "#",
-    aiHint: "portfolio website"
-  },
-]
+const projects = portfolioData.projects;
 
 export function ProjectsGallery() {
   // In a real app, you'd use state to manage the filter.

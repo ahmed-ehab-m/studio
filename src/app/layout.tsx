@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
+import { portfolioData } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: "Ahmed's Portfolio",
-  description: 'Portfolio of Ahmed, a talented Flutter Developer.',
+  title: `${portfolioData.name}'s Portfolio`,
+  description: `Portfolio of ${portfolioData.name}, a talented Flutter Developer.`,
 };
 
 export default function RootLayout({

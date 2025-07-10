@@ -1,35 +1,11 @@
 "use client"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { AnimatedSection } from "./animated-section"
+import { portfolioData } from "@/lib/data"
 
-const testimonials = [
-  {
-    quote: "Ahmed is a brilliant developer who brings not only technical expertise but also a creative and problem-solving mindset to the table. His work on our Flutter app was exceptional.",
-    name: "Jane Doe",
-    title: "Project Manager, Tech Solutions Inc.",
-    avatar: "JD",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "woman portrait"
-  },
-  {
-    quote: "Working with Ahmed was a pleasure. He is a great communicator, meets deadlines without fail, and the quality of his code is top-notch. Highly recommended.",
-    name: "John Smith",
-    title: "CEO, Innovate Co.",
-    avatar: "JS",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "man portrait"
-  },
-  {
-    quote: "His attention to detail and dedication to creating a perfect user experience is what sets Ahmed apart. He transformed our app's UI and performance.",
-    name: "Emily White",
-    title: "Lead Designer, Creative Minds",
-    avatar: "EW",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "woman professional"
-  },
-]
+const testimonials = portfolioData.testimonials;
 
 export function Testimonials() {
   return (

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { AnimatedSection } from "./animated-section"
+import { portfolioData } from "@/lib/data"
 
 export function AboutSection() {
   return (
@@ -12,7 +13,7 @@ export function AboutSection() {
                     src="https://placehold.co/550x550.png"
                     width="550"
                     height="550"
-                    alt="About Ahmed"
+                    alt={`About ${portfolioData.name}`}
                     className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
                     data-ai-hint="developer working"
                 />
@@ -21,7 +22,7 @@ export function AboutSection() {
             <div className="space-y-2">
               <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl">About Me</h2>
               <p className="max-w-[600px] text-muted-foreground md:text-lg">
-                I am a dedicated Flutter developer with a passion for creating seamless and engaging user experiences. My journey in tech began with a curiosity for how things work, which led me to the world of mobile development.
+                {portfolioData.about.bio}
               </p>
             </div>
             <Card className="shadow-lg">
@@ -30,7 +31,7 @@ export function AboutSection() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  With several years of experience, I have honed my skills in building robust and scalable applications from scratch. I thrive in collaborative environments and am committed to writing clean, efficient, and maintainable code. My goal is to leverage technology to solve real-world problems and bring value to users and businesses alike.
+                  {portfolioData.about.journey}
                 </p>
               </CardContent>
             </Card>
