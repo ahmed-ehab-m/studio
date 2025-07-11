@@ -17,14 +17,14 @@ export function HeroSection() {
   return (
     <AnimatedSection id="hero">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:justify-between">
+        <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="space-y-4 text-center md:text-left">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
-              {portfolioData.name}
-            </h1>
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               {portfolioData.title}
             </h2>
+            <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
+              {portfolioData.name}
+            </h1>
             <p className="max-w-xl text-muted-foreground md:text-xl/relaxed">
               {portfolioData.description}
             </p>
@@ -34,13 +34,13 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="flex-shrink-0">
+          <div className="flex justify-center">
             <Image
               src="/my_images/personalmage.jpeg"
               width="250"
               height="250"
               alt={`${portfolioData.name}'s Portrait`}
-              className="mx-auto aspect-square overflow-hidden rounded-full object-cover shadow-lg"
+              className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
               data-ai-hint="professional portrait"
             />
           </div>
