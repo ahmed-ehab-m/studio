@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const portfolioData = {
-  name: "Ahmed",
+  name: "Ahmed Ehab",
   title: "Expert Flutter Developer",
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {

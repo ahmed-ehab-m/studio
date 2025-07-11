@@ -17,30 +17,30 @@ export function HeroSection() {
   return (
     <AnimatedSection id="hero">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-          <div className="space-y-4">
+        <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:justify-between">
+          <div className="space-y-4 text-center md:text-left">
             <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
               {portfolioData.name}
             </h1>
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               {portfolioData.title}
             </h2>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+            <p className="max-w-xl text-muted-foreground md:text-xl/relaxed">
               {portfolioData.description}
             </p>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            <div className="flex justify-center gap-2 md:justify-start">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                 <Link href="#contact" onClick={scrollToContact}>Contact Me</Link>
               </Button>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="https://placehold.co/550x550.png"
-              width="550"
-              height="550"
+              src="/my_images/personalmage.jpeg"
+              width="250"
+              height="250"
               alt={`${portfolioData.name}'s Portrait`}
-              className="mx-auto aspect-square overflow-hidden rounded-full object-cover"
+              className="mx-auto aspect-square overflow-hidden rounded-full object-cover shadow-lg"
               data-ai-hint="professional portrait"
             />
           </div>
