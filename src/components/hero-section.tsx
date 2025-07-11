@@ -19,12 +19,12 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="order-2 space-y-4 text-center md:order-1 md:text-left">
-             <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
-              {portfolioData.title}
-            </h1>
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+             <h2 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
               {portfolioData.name}
             </h2>
+            <h1 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              {portfolioData.title}
+            </h1>
             <p className="max-w-xl text-muted-foreground md:text-xl/relaxed">
               {portfolioData.description}
             </p>
@@ -37,11 +37,12 @@ export function HeroSection() {
           <div className="order-1 flex justify-center md:order-2">
             <Image
               src="/my_images/personalmage.jpeg"
-              width="250"
-              height="250"
+              width="500"
+              height="500"
               alt={`${portfolioData.name}'s Portrait`}
               className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
               data-ai-hint="professional portrait"
+              priority
             />
           </div>
         </div>
