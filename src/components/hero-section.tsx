@@ -18,8 +18,8 @@ export function HeroSection() {
     <AnimatedSection id="hero">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-8 md:grid-cols-2">
-          <div className="space-y-4 text-center md:text-left">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
+          <div className="order-2 space-y-4 text-center md:order-1 md:text-left">
+             <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
               {portfolioData.title}
             </h1>
             <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
@@ -34,7 +34,7 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="order-1 flex justify-center md:order-2">
             <Image
               src="/my_images/personalmage.jpeg"
               width="250"
