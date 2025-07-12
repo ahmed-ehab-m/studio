@@ -38,6 +38,10 @@ export const portfolioData = {
   },
   skills: [
     {
+      category: "Software Engineering Principles",
+      skills: ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
+    },
+    {
       category: "Core Technologies & Architecture",
       skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
     },
@@ -56,10 +60,6 @@ export const portfolioData = {
     {
       category: "Development Tools & Platforms",
       skills: ["REST APIs", "Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"]
-    },
-    {
-      category: "Software Engineering Principles",
-      skills: ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
     }
   ],
   projects: [
