@@ -4,6 +4,7 @@ import { AboutSection } from '@/components/about-section';
 import { SkillsShowcase } from '@/components/skills-showcase';
 import { ProjectsGallery } from '@/components/projects-gallery';
 import { Footer } from '@/components/footer';
+import { CertificatesSection } from '@/components/certificates-section';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
         <SkillsShowcase />
         <ProjectsGallery />
+        <CertificatesSection />
       </main>
       <Footer />
     </div>

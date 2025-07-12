@@ -29,6 +29,9 @@ export function Header() {
           <Link href="#projects" onClick={scrollToSection('projects')} className="transition-colors hover:text-primary" prefetch={false}>
             Projects
           </Link>
+          <Link href="#certificates" onClick={scrollToSection('certificates')} className="transition-colors hover:text-primary" prefetch={false}>
+            Certificates
+          </Link>
           <Link href="#contact" onClick={scrollToSection('contact')} className="transition-colors hover:text-primary" prefetch={false}>
             Contact
           </Link>

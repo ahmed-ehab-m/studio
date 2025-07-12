@@ -72,5 +72,34 @@ export const portfolioData = {
       aiHint: "Notes Async"
     },
   ],
-  testimonials: [],
+  certificates: [
+    {
+      title: "Complete Flutter Development Bootcamp",
+      issuer: "Udemy",
+      url: "#",
+      image: "https://placehold.co/600x400.png",
+      aiHint: "certificate document"
+    },
+    {
+      title: "Advanced Dart for Professionals",
+      issuer: "Coursera",
+      url: "#",
+      image: "https://placehold.co/600x400.png",
+      aiHint: "certificate document"
+    },
+    {
+      title: "State Management with Provider",
+      issuer: "Pluralsight",
+      url: "#",
+      image: "https://placehold.co/600x400.png",
+      aiHint: "certificate document"
+    },
+    {
+      title: "Firebase for Flutter",
+      issuer: "Udacity",
+      url: "#",
+      image: "https://placehold.co/600x400.png",
+      aiHint: "certificate document"
+    }
+  ],
 };
