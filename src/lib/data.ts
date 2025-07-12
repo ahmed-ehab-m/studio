@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 export const portfolioData = {
   name: "Ahmed Ehab",
@@ -11,6 +12,7 @@ export const portfolioData = {
   contact: {
     email: "ahmedehab56200@gmail.com",
     cv: "/cv/Ahmed Ehab - Mobile Developer.pdf",
+    whatsapp: "201140590860", // Add your number here without '+' or '00'
     socials: [
       {
         name: "LinkedIn",
@@ -21,7 +23,12 @@ export const portfolioData = {
         name: "GitHub",
         url: "https://github.com/ahmed-ehab-m",
         icon: Github
-      }
+      },
+      {
+        name: "WhatsApp",
+        url: "https://wa.me/201140590860", // Add your number here
+        icon: WhatsAppIcon,
+      },
     ]
   },
   skills: {

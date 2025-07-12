@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Download, Mail, Mountain } from "lucide-react"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
+import { WhatsAppIcon } from "./icons/whatsapp-icon"
 
 export function Footer() {
   return (
@@ -23,6 +24,12 @@ export function Footer() {
                         Email Me
                     </a>
                 </Button>
+                 <Button asChild size="lg" className="bg-[#25D366] text-white hover:bg-[#25D366]/90">
+                    <a href={`https://wa.me/${portfolioData.contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
+                       <WhatsAppIcon className="mr-2 h-5 w-5" />
+                        WhatsApp
+                    </a>
+                </Button>
                 <Button asChild variant="outline" size="lg">
                     <a href={portfolioData.contact.cv} download>
                         <Download className="mr-2 h-5 w-5" />
@@ -34,7 +41,7 @@ export function Footer() {
             <div className="flex items-start justify-start space-y-4 lg:items-center lg:justify-end">
               <div className="flex items-center gap-4">
                 {portfolioData.contact.socials.map((social) => (
-                    <Link key={social.name} href={social.url} aria-label={social.name} className="text-muted-foreground transition-colors hover:text-primary">
+                    <Link key={social.name} href={social.url} aria-label={social.name} className="text-muted-foreground transition-colors hover:text-primary" target="_blank" rel="noopener noreferrer">
                       <social.icon className="h-8 w-8" />
                     </Link>
                 ))}
