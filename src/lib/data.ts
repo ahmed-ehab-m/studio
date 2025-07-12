@@ -97,16 +97,16 @@ export const portfolioData = {
       title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic]",
       issuer: "Udemy",
       date: "Apr 2025",
-      logo: "https://placehold.co/40x40.png",
-      aiHint: "online course logo",
+      logo: "/logos/udemy.png",
+      aiHint: "udemy logo",
       url: "https://drive.google.com/file/d/1PYspnEg8htwMYQdGazQLy7sD2CGBjWmn/view?usp=drive_link",
     },
     {
       title: "Complete Flutter & Dart Development Course [Arabic]",
       issuer: "Udemy",
       date: "Oct 2024",
-      logo: "https://placehold.co/40x40.png",
-      aiHint: "online course logo",
+      logo: "/logos/udemy.png",
+      aiHint: "udemy logo",
       url: "https://drive.google.com/file/d/1I7VLaNNVoCaSufqsY_X7p6iXnJ3S2IDB/view?usp=drive_link",
     },
     {
@@ -119,3 +119,5 @@ export const portfolioData = {
     },
   ],
 };
+
+    
