@@ -1,7 +1,9 @@
+"use client";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
 import { Briefcase } from "lucide-react"
+import { cn } from "@/lib/utils";
 
 export function AboutSection() {
   const journey = portfolioData.about.journey
@@ -18,21 +20,28 @@ export function AboutSection() {
               </p>
             </div>
           </div>
-          <div className="max-w-3xl mx-auto">
-             <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-8">My Journey & Experience</h3>
-            <div className="relative pl-6">
-              {/* Vertical line */}
-              <div className="absolute left-[30px] h-full w-0.5 bg-border -translate-x-1/2"></div>
+          <div className="w-full max-w-4xl mx-auto">
+             <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
+            <div className="relative">
+              {/* Vertical line in the center */}
+              <div className="absolute left-1/2 h-full w-0.5 bg-border -translate-x-1/2"></div>
+              
               <div className="space-y-12">
                 {journey.map((item, index) => (
-                  <div key={index} className="relative">
+                  <div key={index} className={cn(
+                    "relative flex items-center w-full",
+                    index % 2 === 0 ? "justify-start" : "justify-end"
+                  )}>
                     {/* Dot on the timeline */}
-                    <div className="absolute left-[30px] top-1 h-5 w-5 rounded-full bg-primary border-4 border-secondary/20 flex items-center justify-center -translate-x-1/2">
+                    <div className="absolute left-1/2 top-1 h-5 w-5 rounded-full bg-primary border-4 border-secondary/20 flex items-center justify-center -translate-x-1/2 z-10">
                        <Briefcase className="h-3 w-3 text-primary-foreground" />
                     </div>
 
                     {/* Card */}
-                    <div className="ml-16">
+                    <div className={cn(
+                      "w-[calc(50%-2.5rem)]",
+                       index % 2 === 0 ? "mr-10" : "ml-10"
+                    )}>
                       <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02]">
                          <CardHeader>
                             <CardTitle className="text-lg font-bold">{item.title}</CardTitle>
