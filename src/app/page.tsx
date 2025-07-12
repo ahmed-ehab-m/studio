@@ -3,7 +3,6 @@ import { HeroSection } from '@/components/hero-section';
 import { AboutSection } from '@/components/about-section';
 import { SkillsShowcase } from '@/components/skills-showcase';
 import { ProjectsGallery } from '@/components/projects-gallery';
-import { Testimonials } from '@/components/testimonials';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
         <AboutSection />
         <SkillsShowcase />
         <ProjectsGallery />
-        <Testimonials />
       </main>
       <Footer />
     </div>
