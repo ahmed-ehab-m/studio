@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Architecture } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 export const portfolioData = {
@@ -61,7 +61,7 @@ export const portfolioData = {
     },
     {
       category: "Core Technologies & Architecture",
-      icon: Architecture,
+      icon: Network,
       skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
     },
     {
