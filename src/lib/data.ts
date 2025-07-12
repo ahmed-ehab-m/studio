@@ -45,7 +45,7 @@ export const portfolioData = {
       description: "Health monitoring app tracks data from smart shoes, provides alerts, daily/weekly PDF reports, and bilingual (Arabic/English) medical advice.",
       tech: ["Flutter", "Classic BlueTooth", "Local Storage"],
       category: "Mobile",
-      image: "/projects/pm-1/Group 3 (1).jpg",
+      image: "/projects/foot-pulse/Untitled.jpg",
       github: "#",
       live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_%D8%A7%D9%84%D8%AD%D9%85%D8%AF-%D9%84%D9%84%D9%87-%D8%AE%D9%84%D8%B5%D9%86%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-footpulse-%D9%88%D9%87%D9%88-activity-7339298499865260033-iY43?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
       aiHint: "Foot Pulse"
@@ -56,20 +56,20 @@ export const portfolioData = {
       description: "AI-powered Weather App delivers real-time weather details and a 3-day forecast, powered by  ML model (Flask API) predicting Weather's status.",
       tech: ["Flutter", "REST APIs", "ML Model"],
       category: "Mobile",
-      image: "https://placehold.co/600x400.png",
+      image: "/projects/weather/2.png",
       github: "https://github.com/ahmed-ehab-m/ai_weather",
       live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_flutter-machinelearning-weatherapp-activity-7309598069816201216-JRlP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
       aiHint: "AtmoSmart"
     },
     {
-      title: "Portfolio Website",
+      title: "Notes Async",
       description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
-      tech: ["Flutter Web", "Dart"],
-      category: "Web",
-      image: "https://placehold.co/600x400.png",
-      github: "#",
-      live: "#",
-      aiHint: "portfolio website"
+      tech: ["Flutter", "Hive" , "Cubit"],
+      category: "Mobile",
+      image: "/projects/notes/Notes Async (2).png",
+      github: "https://github.com/ahmed-ehab-m/notes_app",
+      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_exciting-update-im-excited-to-announce-activity-7275608241701556224-3ucJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "Notes Async"
     },
   ],
   testimonials: [
