@@ -7,7 +7,28 @@ export const portfolioData = {
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {
     bio: "A passionate mobile developer with experience in Flutter, constantly learning and improving. Eager to build meaningful and user-friendly apps while embracing new challenges and opportunities.",
-    journey: "With several years of experience, I have honed my skills in building robust and scalable applications from scratch. I thrive in collaborative environments and am committed to writing clean, efficient, and maintainable code. My goal is to leverage technology to solve real-world problems and bring value to users and businesses alike."
+    journey: [
+      {
+        title: "Internship at Cellula Technologies",
+        period: "Jan 2025 - Apr 2025",
+        description: "Gained hands-on experience in a professional environment, contributing to real-world projects and enhancing my collaborative skills. Received a letter of recommendation for my performance."
+      },
+      {
+        title: "Advanced Flutter Development",
+        period: "2024",
+        description: "Focused on advanced concepts by mastering Bloc and MVVM patterns, enabling me to build scalable and maintainable applications following clean architecture principles."
+      },
+      {
+        title: "Intensive Training at ITI",
+        period: "Summer 2023",
+        description: "Completed a 120-hour intensive program in Mobile Application Development using Flutter, which solidified my foundational skills and prepared me for complex challenges."
+      },
+       {
+        title: "Started My Flutter Journey",
+        period: "Early 2023",
+        description: "Began my journey into mobile development with a comprehensive Flutter & Dart course, building a strong foundation and a passion for creating beautiful, native-compiled applications."
+      }
+    ]
   },
   contact: {
     email: "ahmedehab56200@gmail.com",
@@ -45,7 +66,7 @@ export const portfolioData = {
       category: "Core Technologies & Architecture",
       skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
     },
-    {
+     {
       category: "Database & Local Storage",
       skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
     },
