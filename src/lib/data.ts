@@ -50,12 +50,12 @@ export const portfolioData = {
       skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
     },
     {
-      category: "UI/UX & Frontend",
-      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
-    },
-    {
       category: "Hardware & System Integration",
       skills: ["Bluetooth", "IOT", "Notifications"]
+    },
+    {
+      category: "UI/UX & Frontend",
+      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
     },
     {
       category: "Development Tools & Platforms",
