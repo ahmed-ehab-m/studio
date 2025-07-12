@@ -74,32 +74,24 @@ export const portfolioData = {
   ],
   certificates: [
     {
-      title: "Complete Flutter Development Bootcamp",
+      title: "Completion of the Flutter Internship and Recommendation Letter",
+      issuer: "Cellula Technologies",
+      url: "https://drive.google.com/file/d/1van5EjAKY8UrX1cGJp8PalAQl8Y41uxG/view?usp=drive_link",
+    },
+    {
+      title: "Mobile Application Development Using Flutter (120 Hrs)",
+      issuer: "ITI",
+      url: "https://drive.google.com/file/d/1BGBCl707D5vAyAe-J96Zb-NdgBxwYtkK/view",
+    },
+    {
+      title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic]",
       issuer: "Udemy",
-      url: "#",
-      image: "https://placehold.co/600x400.png",
-      aiHint: "certificate document"
+      url: "https://drive.google.com/file/d/1PYspnEg8htwMYQdGazQLy7sD2CGBjWmn/view?usp=drive_link",
     },
     {
-      title: "Advanced Dart for Professionals",
-      issuer: "Coursera",
-      url: "#",
-      image: "https://placehold.co/600x400.png",
-      aiHint: "certificate document"
-    },
-    {
-      title: "State Management with Provider",
-      issuer: "Pluralsight",
-      url: "#",
-      image: "https://placehold.co/600x400.png",
-      aiHint: "certificate document"
-    },
-    {
-      title: "Firebase for Flutter",
-      issuer: "Udacity",
-      url: "#",
-      image: "https://placehold.co/600x400.png",
-      aiHint: "certificate document"
+      title: "Complete Flutter & Dart Development Course [Arabic]",
+      issuer: "Udemy",
+      url: "#https://drive.google.com/file/d/1I7VLaNNVoCaSufqsY_X7p6iXnJ3S2IDB/view?usp=drive_link",
     }
   ],
 };

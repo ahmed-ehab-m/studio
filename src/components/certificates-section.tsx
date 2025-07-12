@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -25,32 +24,24 @@ export function CertificatesSection() {
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {certificates.map((certificate, index) => (
             <Card key={index} className="flex flex-col overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
-              <CardHeader className="p-0">
-                 <Image
-                  src={certificate.image}
-                  alt={`Certificate for ${certificate.title}`}
-                  width={600}
-                  height={400}
-                  className="aspect-video w-full object-cover"
-                  data-ai-hint={certificate.aiHint}
-                />
-              </CardHeader>
-              <div className="flex flex-1 flex-col p-6">
+              <CardHeader>
                 <CardTitle className="text-xl font-bold">{certificate.title}</CardTitle>
-                <CardDescription className="mt-2 flex-1">
+                <CardDescription className="pt-2">
                   <Badge variant="secondary" className="gap-2">
                     <Award className="h-4 w-4" />
                     Issued by {certificate.issuer}
                   </Badge>
                 </CardDescription>
+              </CardHeader>
+              <div className="flex flex-1 flex-col justify-end">
+                <CardFooter className="flex justify-end gap-2 bg-muted/50 p-4">
+                  <Button asChild variant="default" size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Link href={certificate.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" /> View Certificate
+                    </Link>
+                  </Button>
+                </CardFooter>
               </div>
-              <CardFooter className="flex justify-end gap-2 bg-muted/50 p-4">
-                <Button asChild variant="default" size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                  <Link href={certificate.url} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" /> View Certificate
-                  </Link>
-                </Button>
-              </CardFooter>
             </Card>
           ))}
         </div>
