@@ -5,60 +5,61 @@ export const portfolioData = {
   title: "Expert Flutter Developer",
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {
-    bio: "I am a dedicated Flutter developer with a passion for creating seamless and engaging user experiences. My journey in tech began with a curiosity for how things work, which led me to the world of mobile development.",
+    bio: "A passionate mobile developer with experience in Flutter, constantly learning and improving. Eager to build meaningful and user-friendly apps while embracing new challenges and opportunities.",
     journey: "With several years of experience, I have honed my skills in building robust and scalable applications from scratch. I thrive in collaborative environments and am committed to writing clean, efficient, and maintainable code. My goal is to leverage technology to solve real-world problems and bring value to users and businesses alike."
   },
   contact: {
-    email: "ahmed.flutter.dev@email.com",
-    cv: "/ahmed-cv.pdf",
+    email: "ahmedehab56200@gmail.com",
+    cv: "/cv/Ahmed Ehab - Mobile Developer.pdf",
     socials: [
       {
         name: "LinkedIn",
-        url: "#",
+        url: "https://linkedin.com/in/ahmed-ehab-72052b21a",
         icon: Linkedin
       },
       {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/ahmed-ehab-m",
         icon: Github
       }
     ]
   },
   skills: {
-    frontend: ["Flutter", "Dart", "React", "Next.js", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"],
-    backend: ["Node.js", "Firebase", "Supabase", "REST APIs", "GraphQL", "PostgreSQL"],
-    tools: ["Git", "GitHub", "VS Code", "Android Studio", "Xcode", "Jira", "Figma"],
+    frontend: ["Flutter", "Dart"],
+    backend: ["Firebase", "REST APIs","Shared Prefrences", "Hive" , "Object Box"],
+    tools: ["Git", "GitHub", "VS Code", "Android Studio", "Trello", "Figma" , "Postman"],
   },
   projects: [
     {
-      title: "E-Commerce App",
-      description: "A full-featured e-commerce mobile application built with Flutter, providing a seamless shopping experience.",
-      tech: ["Flutter", "Firebase", "Stripe API"],
+      title: "Stoor",
+      description: "a smart Book Store App ,Integrates an AI bot for personalized recommendations and a short 5-line summary for each one.",
+      tech: ["Flutter", "PHP Backend", "Gemini API"],
       category: "Mobile",
-      image: "https://placehold.co/600x400.png",
-      github: "#",
-      live: "#",
-      aiHint: "e-commerce app"
+      image: "/projects/pm-2/stoor.jpg",
+      github: "https://github.com/ahmed-ehab-m/Stoor",
+      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_flutter-mobiledeveloplment-php-activity-7348699655431454720-CWh4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "Stoor"
     },
     {
-      title: "Task Management Web App",
-      description: "A responsive web application for task management and team collaboration, built with Flutter Web.",
-      tech: ["Flutter Web", "Dart", "Firebase"],
-      category: "Web",
-      image: "https://placehold.co/600x400.png",
+      title: "Foot Pulse",
+      description: "Health monitoring app tracks data from smart shoes, provides alerts, daily/weekly PDF reports, and bilingual (Arabic/English) medical advice.",
+      tech: ["Flutter", "Classic BlueTooth", "Local Storage"],
+      category: "Mobile",
+      image: "/projects/pm-1/Group 3 (1).jpg",
       github: "#",
-      live: "#",
-      aiHint: "task management"
+      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_%D8%A7%D9%84%D8%AD%D9%85%D8%AF-%D9%84%D9%84%D9%87-%D8%AE%D9%84%D8%B5%D9%86%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-footpulse-%D9%88%D9%87%D9%88-activity-7339298499865260033-iY43?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "Foot Pulse"
     },
+  
     {
-      title: "Fitness Tracker",
-      description: "A mobile app to track workouts, set fitness goals, and monitor progress with detailed analytics.",
-      tech: ["Flutter", "Supabase", "Google Fit API"],
+      title: "AtmoSmart",
+      description: "AI-powered Weather App delivers real-time weather details and a 3-day forecast, powered by  ML model (Flask API) predicting Weather's status.",
+      tech: ["Flutter", "REST APIs", "ML Model"],
       category: "Mobile",
       image: "https://placehold.co/600x400.png",
-      github: "#",
-      live: "#",
-      aiHint: "fitness tracker"
+      github: "https://github.com/ahmed-ehab-m/ai_weather",
+      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_flutter-machinelearning-weatherapp-activity-7309598069816201216-JRlP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "AtmoSmart"
     },
     {
       title: "Portfolio Website",
