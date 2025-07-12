@@ -33,14 +33,14 @@ export function AboutSection() {
                     index % 2 === 0 ? "justify-start" : "justify-end"
                   )}>
                     {/* Dot on the timeline */}
-                    <div className="absolute left-1/2 top-1 h-5 w-5 rounded-full bg-primary border-4 border-secondary/20 flex items-center justify-center -translate-x-1/2 z-10">
+                    <div className="absolute left-1/2 top-1 h-5 w-5 rounded-full bg-primary border-4 border-background flex items-center justify-center -translate-x-1/2 z-10">
                        <Briefcase className="h-3 w-3 text-primary-foreground" />
                     </div>
 
                     {/* Card */}
                     <div className={cn(
                       "w-[calc(50%-2.5rem)]",
-                       index % 2 === 0 ? "mr-10" : "ml-10"
+                       index % 2 === 0 ? "" : ""
                     )}>
                       <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02]">
                          <CardHeader>
