@@ -38,6 +38,7 @@ export const portfolioData = {
   },
   skills: [
       ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"],
+      ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"],
       ["Firebase", "REST APIs", "Shared Preferences", "Hive", "Object Box", "Bluetooth"],
       ["UI/UX Design", "Animations", "Responsive UI", "Dynamic Theming", "IOT", "Notifications"],
       ["Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"],
