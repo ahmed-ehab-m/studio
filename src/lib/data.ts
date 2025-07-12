@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Architecture } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 export const portfolioData = {
@@ -9,25 +9,21 @@ export const portfolioData = {
     bio: "A passionate mobile developer with experience in Flutter, constantly learning and improving. Eager to build meaningful and user-friendly apps while embracing new challenges and opportunities.",
     journey: [
       {
+        title: "Freelancer Flutter Developer",
+        period: "Feb 2025 - Apr 2025",
+        description: "•Collaborated with a team of 2 embedded systems engineers to integrate IoT solutions."
+      },
+      {
         title: "Internship at Cellula Technologies",
-        period: "Jan 2025 - Apr 2025",
-        description: "Gained hands-on experience in a professional environment, contributing to real-world projects and enhancing my collaborative skills. Received a letter of recommendation for my performance."
+        period: "Feb 2025 - Apr 2025",
+        description: "Developed two AI-integrated projects under mentorship, using Agile methodologies and Trello for task management"
       },
       {
-        title: "Advanced Flutter Development",
-        period: "2024",
-        description: "Focused on advanced concepts by mastering Bloc and MVVM patterns, enabling me to build scalable and maintainable applications following clean architecture principles."
-      },
-      {
-        title: "Intensive Training at ITI",
+        title: "Flutter Developer Summer Internship, ITI",
         period: "Summer 2023",
-        description: "Completed a 120-hour intensive program in Mobile Application Development using Flutter, which solidified my foundational skills and prepared me for complex challenges."
+        description: "•Improved code quality by applying instructor feedback, resulting in cleaner and more maintainable codebases."
       },
-       {
-        title: "Started My Flutter Journey",
-        period: "Early 2023",
-        description: "Began my journey into mobile development with a comprehensive Flutter & Dart course, building a strong foundation and a passion for creating beautiful, native-compiled applications."
-      }
+      
     ]
   },
   contact: {
@@ -60,26 +56,32 @@ export const portfolioData = {
   skills: [
     {
       category: "Software Engineering Principles",
+      icon: Code,
       skills: ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
     },
     {
       category: "Core Technologies & Architecture",
+      icon: Architecture,
       skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
     },
-     {
+    {
       category: "Database & Local Storage",
+      icon: Database,
       skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
     },
     {
       category: "Hardware & System Integration",
+      icon: Cpu,
       skills: ["Bluetooth", "IOT", "Notifications"]
     },
     {
       category: "UI/UX & Frontend",
+      icon: Palette,
       skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
     },
     {
       category: "Development Tools & Platforms",
+      icon: Wrench,
       skills: ["REST APIs", "Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"]
     }
   ],

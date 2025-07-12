@@ -23,7 +23,10 @@ export function SkillsShowcase() {
             {skillsGroups.map((group, groupIndex) => (
               <Card key={groupIndex} className="shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-lg text-primary">{group.category}</CardTitle>
+                  <CardTitle className="flex items-center gap-3 text-lg text-primary">
+                    <group.icon className="h-6 w-6" />
+                    <span>{group.category}</span>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap justify-start gap-2">
