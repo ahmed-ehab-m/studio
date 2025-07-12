@@ -36,11 +36,13 @@ export const portfolioData = {
       },
     ]
   },
-  skills: {
-    frontend: ["Flutter", "Dart"],
-    backend: ["Firebase", "REST APIs","Shared Prefrences", "Hive" , "Object Box"],
-    tools: ["Git", "GitHub", "VS Code", "Android Studio", "Trello", "Figma" , "Postman"],
-  },
+  skills: [
+      ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"],
+      ["Firebase", "REST APIs", "Shared Preferences", "Hive", "Object Box", "Bluetooth"],
+      ["UI/UX Design", "Animations", "Responsive UI", "Dynamic Theming", "IOT", "Notifications"],
+      ["Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"],
+      ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
+  ],
   projects: [
     {
       title: "Stoor",
@@ -119,5 +121,3 @@ export const portfolioData = {
     },
   ],
 };
-
-    
