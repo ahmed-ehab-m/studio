@@ -18,18 +18,6 @@ export function Footer() {
                 I'm currently open to new opportunities and collaborations. Feel free to reach out!
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <a href={`mailto:${portfolioData.contact.email}`}>
-                        <Mail className="mr-2 h-5 w-5" />
-                        Email Me
-                    </a>
-                </Button>
-                 <Button asChild size="lg" className="bg-[#25D366] text-white hover:bg-[#25D366]/90">
-                    <a href={`https://wa.me/${portfolioData.contact.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                       <WhatsAppIcon className="mr-2 h-5 w-5" />
-                        WhatsApp
-                    </a>
-                </Button>
                 <Button asChild variant="outline" size="lg">
                     <a href={portfolioData.contact.cv} download>
                         <Download className="mr-2 h-5 w-5" />

@@ -24,6 +24,11 @@ export const portfolioData = {
         url: "https://github.com/ahmed-ehab-m",
         icon: Github
       },
+       {
+        name: "Email",
+        url: "mailto:ahmedehab56200@gmail.com",
+        icon: Mail,
+      },
       {
         name: "WhatsApp",
         url: "https://wa.me/201140590860", // Add your number here
