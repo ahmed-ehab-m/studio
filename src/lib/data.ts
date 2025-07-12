@@ -37,12 +37,30 @@ export const portfolioData = {
     ]
   },
   skills: [
-      ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"],
-      ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"],
-      ["Bluetooth", "IOT", "Notifications"],
-      ["Firebase", "Hive", "ObjectBox", "Shared Preferences"],
-      ["REST APIs", "Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"],
-      ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
+    {
+      category: "Core Technologies & Architecture",
+      skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
+    },
+    {
+      category: "UI/UX & Frontend",
+      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
+    },
+    {
+      category: "Hardware & System Integration",
+      skills: ["Bluetooth", "IOT", "Notifications"]
+    },
+    {
+      category: "Database & Local Storage",
+      skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
+    },
+    {
+      category: "Development Tools & Platforms",
+      skills: ["REST APIs", "Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"]
+    },
+    {
+      category: "Software Engineering Principles",
+      skills: ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
+    }
   ],
   projects: [
     {

@@ -2,6 +2,7 @@
 import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const skillsGroups = portfolioData.skills;
 
@@ -18,13 +19,20 @@ export function SkillsShowcase() {
               A glimpse into the technologies and tools I use to bring projects to life.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-4 max-w-4xl">
+          <div className="grid w-full max-w-4xl gap-6 md:grid-cols-2 lg:grid-cols-3">
             {skillsGroups.map((group, groupIndex) => (
-              <div key={groupIndex} className="flex flex-wrap justify-center gap-3">
-                {group.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="px-4 py-2 text-sm shadow-md">{skill}</Badge>
-                ))}
-              </div>
+              <Card key={groupIndex} className="shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-lg text-primary">{group.category}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap justify-start gap-2">
+                    {group.skills.map((skill) => (
+                      <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm">{skill}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
