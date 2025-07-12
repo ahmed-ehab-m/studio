@@ -39,8 +39,7 @@ export function AboutSection() {
 
                     {/* Card */}
                     <div className={cn(
-                      "w-[calc(50%-2.5rem)]",
-                       index % 2 === 0 ? "" : ""
+                      "w-[calc(50%-2.5rem)]"
                     )}>
                       <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02]">
                          <CardHeader>
