@@ -1,9 +1,9 @@
 "use client"
 import Link from "next/link"
-import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { ExternalLink, Award } from "lucide-react"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { ExternalLink, Calendar } from "lucide-react"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
 
@@ -24,24 +24,31 @@ export function CertificatesSection() {
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {certificates.map((certificate, index) => (
             <Card key={index} className="flex flex-col overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
-              <CardHeader>
-                <CardTitle className="text-xl font-bold">{certificate.title}</CardTitle>
-                <CardDescription className="pt-2">
-                  <Badge variant="secondary" className="gap-2">
-                    <Award className="h-4 w-4" />
-                    Issued by {certificate.issuer}
-                  </Badge>
-                </CardDescription>
+              <CardHeader className="flex flex-row items-start gap-4 space-y-0">
+                <Image
+                  src={certificate.logo}
+                  alt={`${certificate.issuer} logo`}
+                  width={40}
+                  height={40}
+                  className="rounded-full border"
+                  data-ai-hint={certificate.aiHint}
+                />
+                <div className="flex-1 space-y-1">
+                  <CardTitle className="text-lg font-bold">{certificate.title}</CardTitle>
+                  <p className="text-sm text-muted-foreground">Issued by {certificate.issuer}</p>
+                </div>
+                <Button asChild variant="ghost" size="icon" className="shrink-0">
+                  <Link href={certificate.url} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-5 w-5" />
+                    <span className="sr-only">View Certificate</span>
+                  </Link>
+                </Button>
               </CardHeader>
-              <div className="flex flex-1 flex-col justify-end">
-                <CardFooter className="flex justify-end gap-2 bg-muted/50 p-4">
-                  <Button asChild variant="default" size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <Link href={certificate.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" /> View Certificate
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </div>
+              <div className="flex-1" />
+              <CardFooter className="flex justify-start gap-2 bg-muted/50 p-4">
+                <Calendar className="h-4 w-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">{certificate.date}</span>
+              </CardFooter>
             </Card>
           ))}
         </div>

@@ -31,7 +31,7 @@ export const portfolioData = {
       },
       {
         name: "WhatsApp",
-        url: "https://wa.me/201140590860", // Add your number here
+        url: "https://wa.me/201150700695", // Add your number here
         icon: WhatsAppIcon,
       },
     ]
@@ -88,22 +88,34 @@ export const portfolioData = {
     {
       title: "Completion of the Flutter Internship and Recommendation Letter",
       issuer: "Cellula Technologies",
+      date: "Aug 2023",
+      logo: "https://placehold.co/40x40.png",
+      aiHint: "company logo",
       url: "https://drive.google.com/file/d/1van5EjAKY8UrX1cGJp8PalAQl8Y41uxG/view?usp=drive_link",
     },
     {
       title: "Mobile Application Development Using Flutter (120 Hrs)",
       issuer: "ITI",
+      date: "Jul 2023",
+      logo: "https://placehold.co/40x40.png",
+      aiHint: "organization logo",
       url: "https://drive.google.com/file/d/1BGBCl707D5vAyAe-J96Zb-NdgBxwYtkK/view",
     },
     {
       title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic]",
       issuer: "Udemy",
+      date: "Dec 2022",
+      logo: "https://placehold.co/40x40.png",
+      aiHint: "online course logo",
       url: "https://drive.google.com/file/d/1PYspnEg8htwMYQdGazQLy7sD2CGBjWmn/view?usp=drive_link",
     },
     {
       title: "Complete Flutter & Dart Development Course [Arabic]",
       issuer: "Udemy",
-      url: "#https://drive.google.com/file/d/1I7VLaNNVoCaSufqsY_X7p6iXnJ3S2IDB/view?usp=drive_link",
+      date: "Sep 2022",
+      logo: "https://placehold.co/40x40.png",
+      aiHint: "online course logo",
+      url: "https://drive.google.com/file/d/1I7VLaNNVoCaSufqsY_X7p6iXnJ3S2IDB/view?usp=drive_link",
     }
   ],
 };
