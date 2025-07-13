@@ -29,14 +29,6 @@ export function CertificatesSection() {
                 {certificates.map((certificate, index) => (
                   <Card key={index} className="flex flex-col overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
                     <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-4 p-4">
-                      <Image
-                        src={certificate.logo}
-                        alt={`${certificate.issuer} logo`}
-                        width={48}
-                        height={48}
-                        className="rounded-lg border"
-                        data-ai-hint={certificate.aiHint}
-                      />
                       <div className="flex-1 space-y-1">
                         <CardTitle className="text-lg font-bold">{certificate.title}</CardTitle>
                         <p className="text-sm text-muted-foreground">Issued by {certificate.issuer}</p>
