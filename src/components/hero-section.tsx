@@ -8,6 +8,7 @@ import { portfolioData } from "@/lib/data"
 import { Download, Briefcase } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { MobileFrame } from "./mobile-frame"
 
 export function HeroSection() {
   const journey = portfolioData.about.journey
@@ -15,49 +16,53 @@ export function HeroSection() {
   return (
     <AnimatedSection id="hero" className="pt-12 md:pt-24 lg:pt-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid items-center gap-8 md:grid-cols-2">
-          <div className="order-2 space-y-4 text-center md:order-1 md:text-left">
-            <div className="flex items-baseline justify-center gap-2 md:justify-start">
-              <span className="text-lg font-medium text-muted-foreground sm:text-xl">
-                Hi, I'm
-              </span>
-              <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                {portfolioData.name}
-              </h1>
-            </div>
-            <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
-              {portfolioData.title}
-            </h2>
-            <p className="max-w-xl text-muted-foreground md:text-xl/relaxed">
-              {portfolioData.about.bio}
-            </p>
-            <div className="flex flex-col items-center gap-4 pt-4 md:items-start">
-              <div className="flex flex-col gap-4 sm:flex-row">
-                 <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <a href={portfolioData.contact.cv} download>
-                        <Download className="mr-2 h-5 w-5" />
-                        Download CV
-                    </a>
-                </Button>
-              </div>
-              <div className="flex items-center gap-4 pt-2">
-                {portfolioData.contact.socials.map((social) => (
-                    <Link 
-                      key={social.name} 
-                      href={social.url} 
-                      aria-label={social.name} 
-                      className={cn(
-                        "text-muted-foreground transition-colors",
-                        social.hoverColor
-                      )}
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <social.icon className="h-8 w-8" />
-                    </Link>
-                ))}
-              </div>
-            </div>
+        <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-16">
+          <div className="order-2 flex justify-center md:order-1">
+             <MobileFrame>
+                <div className="flex h-full flex-col justify-center space-y-4 text-center">
+                  <div className="flex items-baseline justify-center gap-2">
+                    <span className="text-lg font-medium text-muted-foreground sm:text-xl">
+                      Hi, I'm
+                    </span>
+                    <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                      {portfolioData.name}
+                    </h1>
+                  </div>
+                  <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
+                    {portfolioData.title}
+                  </h2>
+                  <p className="max-w-xl text-muted-foreground md:text-lg/relaxed">
+                    {portfolioData.about.bio}
+                  </p>
+                  <div className="flex flex-col items-center gap-4 pt-4">
+                    <div className="flex flex-col gap-4 sm:flex-row">
+                      <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                          <a href={portfolioData.contact.cv} download>
+                              <Download className="mr-2 h-5 w-5" />
+                              Download CV
+                          </a>
+                      </Button>
+                    </div>
+                    <div className="flex items-center gap-4 pt-2">
+                      {portfolioData.contact.socials.map((social) => (
+                          <Link 
+                            key={social.name} 
+                            href={social.url} 
+                            aria-label={social.name} 
+                            className={cn(
+                              "text-muted-foreground transition-colors",
+                              social.hoverColor
+                            )}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            <social.icon className="h-8 w-8" />
+                          </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+            </MobileFrame>
           </div>
           <div className="order-1 flex justify-center md:order-2">
             <Image
