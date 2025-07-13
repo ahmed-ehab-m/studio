@@ -41,7 +41,7 @@ export const portfolioData = {
         name: "GitHub",
         url: "https://github.com/ahmed-ehab-m",
         icon: Github,
-        hoverColor: "hover:text-black dark:hover:text-black"
+        hoverColor: "hover:text-black dark:hover:text-white"
       },
        {
         name: "Email",
