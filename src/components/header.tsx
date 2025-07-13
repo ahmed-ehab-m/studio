@@ -12,7 +12,6 @@ export function Header() {
   };
 
   const navLinks = [
-    { href: "#about", text: "About", icon: User },
     { href: "#skills", text: "Skills", icon: Wrench },
     { href: "#projects", text: "Projects", icon: FolderKanban },
     { href: "#certificates", text: "Certificates", icon: Award },
