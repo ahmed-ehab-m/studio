@@ -31,7 +31,7 @@ export function CertificatesSection() {
                     <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-4 p-4">
                       <div className="flex-1 space-y-1">
                         <CardTitle className="text-lg font-bold">{certificate.title}</CardTitle>
-                        <p className="text-sm text-muted-foreground">Issued by {certificate.issuer}</p>
+                        <p className="text-sm text-secondary">Issued by {certificate.issuer}</p>
                         <div className="flex items-center gap-2 pt-1">
                           <Calendar className="h-4 w-4 text-muted-foreground" />
                           <span className="text-sm text-muted-foreground">{certificate.date}</span>
