@@ -16,8 +16,8 @@ export function HeroSection() {
     <AnimatedSection id="hero" className="pt-12 md:pt-24 lg:pt-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-16">
-          <div className="space-y-4 text-right lg:text-right">
-            <div className="flex items-baseline justify-end gap-2 lg:justify-end">
+          <div className="space-y-4 text-left lg:text-left">
+            <div className="flex items-baseline justify-start gap-2 lg:justify-start">
               <span className="text-lg font-medium text-muted-foreground sm:text-xl">
                 Hi, I'm
               </span>
@@ -28,10 +28,10 @@ export function HeroSection() {
             <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
               {portfolioData.title}
             </h2>
-            <p className="mx-auto max-w-xl text-muted-foreground md:text-lg/relaxed lg:mx-0">
+            <p className="max-w-xl text-muted-foreground md:text-lg/relaxed lg:mx-0">
               {portfolioData.about.bio}
             </p>
-            <div className="flex flex-col items-end gap-4 pt-4 lg:items-end">
+            <div className="flex flex-col items-start gap-4 pt-4 lg:items-start">
               <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                   <a href={portfolioData.contact.cv} download>
                       <Download className="mr-2 h-5 w-5" />
