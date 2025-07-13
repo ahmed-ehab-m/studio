@@ -1,8 +1,7 @@
 "use client"
 import Link from "next/link"
-import { Mountain, User, Wrench, FolderKanban, Award, MessageSquare } from "lucide-react"
+import { User, Wrench, FolderKanban, Award, MessageSquare } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
-import { portfolioData } from "@/lib/data"
 
 export function Header() {
   const scrollToSection = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -22,12 +21,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 flex justify-center p-4">
-      <div className="flex h-16 w-full max-w-2xl items-center justify-between rounded-full bg-background/80 px-6 shadow-lg backdrop-blur-md">
-        <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <Mountain className="h-6 w-6 text-primary" />
-          <span className="sr-only">Portfolio Home</span>
-        </Link>
-        <nav className="hidden items-center gap-4 text-sm font-medium md:flex">
+      <div className="flex h-16 w-full max-w-xl items-center justify-between rounded-full bg-background/80 px-6 shadow-lg backdrop-blur-md">
+        <nav className="flex w-full items-center justify-center gap-4 text-sm font-medium md:gap-6">
           {navLinks.map((link) => (
             <Link 
               key={link.href} 
@@ -37,7 +32,7 @@ export function Header() {
               prefetch={false}
             >
               <link.icon className="h-4 w-4" />
-              {link.text}
+              <span className="hidden sm:inline">{link.text}</span>
             </Link>
           ))}
         </nav>
