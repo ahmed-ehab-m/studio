@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 
 export function Footer() {
   return (
-    <footer id="contact" className="w-full bg-secondary/20">
+    <footer id="contact" className="w-full">
       <AnimatedSection className="py-12 md:py-16 lg:py-20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-2">

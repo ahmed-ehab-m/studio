@@ -9,7 +9,7 @@ export function AboutSection() {
   const journey = portfolioData.about.journey
 
   return (
-    <AnimatedSection id="about" className="bg-secondary/20">
+    <AnimatedSection id="about">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center justify-center gap-12">
           <div className="space-y-6 text-center">

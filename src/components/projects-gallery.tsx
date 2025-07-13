@@ -14,7 +14,7 @@ export function ProjectsGallery() {
   // In a real app, you'd use state to manage the filter.
   // For this static version, we'll just display all projects.
   return (
-    <AnimatedSection id="projects" className="bg-secondary/20">
+    <AnimatedSection id="projects">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6 text-center">
           <div className="space-y-2">

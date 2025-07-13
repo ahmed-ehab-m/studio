@@ -11,7 +11,7 @@ const certificates = portfolioData.certificates;
 
 export function CertificatesSection() {
   return (
-    <AnimatedSection id="certificates" className="bg-card">
+    <AnimatedSection id="certificates">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6 text-center">
           <div className="space-y-2">
