@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { User, Wrench, FolderKanban, Award, MessageSquare } from "lucide-react"
+import { User, Wrench, FolderKanban, Award } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 
 export function Header() {
@@ -12,10 +12,10 @@ export function Header() {
   };
 
   const navLinks = [
+    { href: "#about", text: "About", icon: User },
     { href: "#skills", text: "Skills", icon: Wrench },
     { href: "#projects", text: "Projects", icon: FolderKanban },
     { href: "#certificates", text: "Certificates", icon: Award },
-    { href: "#hero", text: "Contact", icon: MessageSquare }
   ];
 
   return (

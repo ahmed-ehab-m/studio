@@ -24,9 +24,9 @@ export function HeroSection() {
               {portfolioData.title}
             </h2>
             <p className="max-w-xl text-muted-foreground md:text-xl/relaxed">
-              {portfolioData.description}
+              {portfolioData.about.bio}
             </p>
-            <div id="contact" className="flex flex-col items-center gap-4 pt-4 md:items-start">
+            <div className="flex flex-col items-center gap-4 pt-4 md:items-start">
               <div className="flex flex-col gap-4 sm:flex-row">
                  <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                     <a href={portfolioData.contact.cv} download>
@@ -68,15 +68,7 @@ export function HeroSection() {
           </div>
         </div>
         
-        <div className="mt-24 grid items-center justify-center gap-12">
-          <div className="space-y-6 text-center">
-            <div className="space-y-2">
-              <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl">About Me</h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
-                {portfolioData.about.bio}
-              </p>
-            </div>
-          </div>
+        <div id="about" className="mt-24 grid items-center justify-center gap-12">
           <div className="w-full max-w-4xl mx-auto">
              <h3 className="font-headline text-2xl font-bold tracking-tighter text-secondary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
             <div className="relative">
