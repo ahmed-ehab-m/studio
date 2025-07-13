@@ -43,7 +43,7 @@ export function AboutSection() {
                     )}>
                       <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02]">
                          <CardHeader>
-                            <CardTitle className="text-lg font-bold">{item.title}</CardTitle>
+                            <CardTitle className="text-lg font-bold text-secondary">{item.title}</CardTitle>
                             <CardDescription className="text-sm text-accent font-semibold pt-1">{item.period}</CardDescription>
                           </CardHeader>
                           <CardContent>
