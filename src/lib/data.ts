@@ -142,38 +142,42 @@ export const portfolioData = {
       aiHint: "Notes Async"
     },
   ],
-  certificates: [
-    {
-      title: "Completion of the Flutter Internship and Recommendation Letter",
-      issuer: "Cellula Technologies",
-      date: "Apr 2025",
-      logo: "https://placehold.co/48x48.png",
-      aiHint: "company logo",
-      url: "https://drive.google.com/file/d/1van5EjAKY8UrX1cGJp8PalAQl8Y41uxG/view?usp=drive_link",
-    },
-    {
-      title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic]",
-      issuer: "Udemy",
-      date: "Apr 2025",
-      logo: "https://placehold.co/48x48.png",
-      aiHint: "udemy logo",
-      url: "https://drive.google.com/file/d/1PYspnEg8htwMYQdGazQLy7sD2CGBjWmn/view?usp=drive_link",
-    },
-    {
-      title: "Complete Flutter & Dart Development Course [Arabic]",
-      issuer: "Udemy",
-      date: "Oct 2024",
-      logo: "https://placehold.co/48x48.png",
-      aiHint: "udemy logo",
-      url: "https://drive.google.com/file/d/1I7VLaNNVoCaSufqsY_X7p6iXnJ3S2IDB/view?usp=drive_link",
-    },
-    {
-      title: "Mobile Application Development Using Flutter (120 Hrs)",
-      issuer: "ITI",
-      date: "Sep 2023",
-      logo: "https://placehold.co/48x48.png",
-      aiHint: "organization logo",
-      url: "https://drive.google.com/file/d/1BGBCl707D5vAyAe-J96Zb-NdgBxwYtkK/view",
-    },
-  ],
+  certificates: {
+    "Internships & Experience": [
+      {
+        title: "Completion of the Flutter Internship and Recommendation Letter",
+        issuer: "Cellula Technologies",
+        date: "Apr 2025",
+        logo: "https://placehold.co/48x48.png",
+        aiHint: "company logo",
+        url: "https://drive.google.com/file/d/1van5EjAKY8UrX1cGJp8PalAQl8Y41uxG/view?usp=drive_link",
+      },
+      {
+        title: "Mobile Application Development Using Flutter (120 Hrs)",
+        issuer: "ITI",
+        date: "Sep 2023",
+        logo: "https://placehold.co/48x48.png",
+        aiHint: "organization logo",
+        url: "https://drive.google.com/file/d/1BGBCl707D5vAyAe-J96Zb-NdgBxwYtkK/view",
+      },
+    ],
+    "Online Courses": [
+      {
+        title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic]",
+        issuer: "Udemy",
+        date: "Apr 2025",
+        logo: "https://placehold.co/48x48.png",
+        aiHint: "udemy logo",
+        url: "https://drive.google.com/file/d/1PYspnEg8htwMYQdGazQLy7sD2CGBjWmn/view?usp=drive_link",
+      },
+      {
+        title: "Complete Flutter & Dart Development Course [Arabic]",
+        issuer: "Udemy",
+        date: "Oct 2024",
+        logo: "https://placehold.co/48x48.png",
+        aiHint: "udemy logo",
+        url: "https://drive.google.com/file/d/1I7VLaNNVoCaSufqsY_X7p6iXnJ3S2IDB/view?usp=drive_link",
+      },
+    ]
+  }
 };
