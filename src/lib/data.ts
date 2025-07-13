@@ -65,9 +65,9 @@ export const portfolioData = {
       skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
     },
     {
-      category: "UI/UX & Frontend",
-      icon: Palette,
-      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
+      category: "Hardware & System Integration",
+      icon: Cpu,
+      skills: ["Bluetooth", "IOT", "Notifications"]
     },
     {
       category: "Database & Local Storage",
@@ -75,9 +75,9 @@ export const portfolioData = {
       skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
     },
     {
-      category: "Hardware & System Integration",
-      icon: Cpu,
-      skills: ["Bluetooth", "IOT", "Notifications"]
+      category: "UI/UX & Frontend",
+      icon: Palette,
+      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
     },
     {
       category: "Development Tools & Platforms",
