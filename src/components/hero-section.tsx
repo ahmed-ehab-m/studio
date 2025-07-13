@@ -22,7 +22,7 @@ export function HeroSection() {
             <h1 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               {portfolioData.name}
             </h1>
-            <h2 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
+            <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
               {portfolioData.title}
             </h2>
             <p className="max-w-xl text-muted-foreground md:text-xl/relaxed">

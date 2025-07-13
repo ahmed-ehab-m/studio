@@ -21,7 +21,7 @@ export function AboutSection() {
             </div>
           </div>
           <div className="w-full max-w-4xl mx-auto">
-             <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
+             <h3 className="font-headline text-2xl font-bold tracking-tighter text-secondary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
             <div className="relative">
               {/* Vertical line in the center */}
               <div className="absolute left-1/2 h-full w-0.5 bg-secondary -translate-x-1/2"></div>
