@@ -8,7 +8,7 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* White */
+    --background: 0 0% 98%; /* Near White */
     --foreground: 0 0% 3.9%; /* Black */
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -16,17 +16,17 @@ body {
     --popover-foreground: 0 0% 3.9%;
     --primary: 0 0% 3.9%; /* Black */
     --primary-foreground: 0 0% 98%; /* White */
-    --secondary: 0 0% 96.1%; /* Near white */
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 221.2 83.2% 53.3%; /* Blue */
+    --secondary-foreground: 0 0% 98%; /* White */
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 221.2 83.2% 53.3%; /* Blue */
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 100%; /* White */
+    --accent-foreground: 0 0% 9%; /* Black */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 221.2 83.2% 53.3%;
+    --ring: 221.2 83.2% 53.3%; /* Blue for ring */
     --radius: 0.8rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -46,17 +46,17 @@ body {
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%; /* White */
     --primary-foreground: 0 0% 9%; /* Black */
-    --secondary: 0 0% 14.9%; /* Near black */
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217.2 91.2% 59.8%; /* Blue */
+    --secondary-foreground: 0 0% 9%; /* Black */
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 217.2 91.2% 59.8%; /* Blue */
-    --accent-foreground: 0 0% 9%;
+    --accent: 0 0% 3.9%; /* Black */
+    --accent-foreground: 0 0% 98%; /* White */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 217.2 91.2% 59.8%;
+    --ring: 217.2 91.2% 59.8%; /* Blue for ring */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
