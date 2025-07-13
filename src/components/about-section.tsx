@@ -24,7 +24,7 @@ export function AboutSection() {
              <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
             <div className="relative">
               {/* Vertical line in the center */}
-              <div className="absolute left-1/2 h-full w-0.5 bg-border -translate-x-1/2"></div>
+              <div className="absolute left-1/2 h-full w-0.5 bg-secondary -translate-x-1/2"></div>
               
               <div className="space-y-12">
                 {journey.map((item, index) => (
