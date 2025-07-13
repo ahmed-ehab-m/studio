@@ -57,7 +57,7 @@ export function HeroSection() {
               width="300"
               height="300"
               alt={`${portfolioData.name}'s Portrait`}
-              className="aspect-square overflow-hidden rounded-lg object-cover shadow-lg"
+              className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
               data-ai-hint="professional portrait"
               priority
             />
