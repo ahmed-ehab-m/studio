@@ -38,7 +38,7 @@ export function ProjectsGallery() {
                 />
               </CardHeader>
               <div className="flex flex-1 flex-col p-6">
-                <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-secondary">{project.title}</CardTitle>
                 <CardDescription className="mt-2 flex-1">{project.description}</CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
