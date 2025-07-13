@@ -60,6 +60,7 @@ export function HeroSection() {
               className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
               data-ai-hint="professional portrait"
               priority
+              quality={100}
             />
           </div>
         </div>
