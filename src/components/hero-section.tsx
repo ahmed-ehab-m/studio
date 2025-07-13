@@ -17,12 +17,14 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="order-2 space-y-4 text-center md:order-1 md:text-left">
-            <span className="text-xl font-medium text-foreground sm:text-2xl">
-              Hi, I'm
-            </span>
-            <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              {portfolioData.name}
-            </h1>
+            <div className="flex items-baseline justify-center gap-2 md:justify-start">
+              <span className="text-lg font-medium text-foreground sm:text-xl">
+                Hi, I'm
+              </span>
+              <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                {portfolioData.name}
+              </h1>
+            </div>
             <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
               {portfolioData.title}
             </h2>
