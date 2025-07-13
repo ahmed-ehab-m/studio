@@ -34,7 +34,10 @@ export function Footer() {
                       key={social.name} 
                       href={social.url} 
                       aria-label={social.name} 
-                      className={cn("text-muted-foreground transition-colors", social.hoverColor)}
+                      className={cn(
+                        "text-muted-foreground transition-colors",
+                        social.hoverColor
+                      )}
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
