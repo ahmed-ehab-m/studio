@@ -54,10 +54,10 @@ export function HeroSection() {
           <div className="order-1 flex justify-center md:order-2">
             <Image
               src="/my_images/personalmage.jpeg"
-              width="500"
-              height="500"
+              width="400"
+              height="400"
               alt={`${portfolioData.name}'s Portrait`}
-              className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
+              className="aspect-square overflow-hidden rounded-lg object-cover shadow-lg"
               data-ai-hint="professional portrait"
               priority
             />
