@@ -31,14 +31,14 @@ export function HeroSection() {
             <p className="mx-auto max-w-xl text-muted-foreground md:text-lg/relaxed lg:mx-0">
               {portfolioData.about.bio}
             </p>
-            <div className="flex flex-col items-center gap-4 pt-4 sm:flex-row lg:justify-start">
+            <div className="flex flex-col items-center gap-4 pt-4 lg:items-start">
               <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                   <a href={portfolioData.contact.cv} download>
                       <Download className="mr-2 h-5 w-5" />
                       Download CV
                   </a>
               </Button>
-              <div className="flex items-center gap-4 pt-2 sm:pt-0">
+              <div className="flex items-center gap-4 pt-4">
                 {portfolioData.contact.socials.map((social) => (
                     <Link 
                       key={social.name} 
