@@ -5,6 +5,7 @@ import { Download, Mail, Mountain } from "lucide-react"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
 import { WhatsAppIcon } from "./icons/whatsapp-icon"
+import { cn } from "@/lib/utils"
 
 export function Footer() {
   return (
@@ -29,7 +30,14 @@ export function Footer() {
             <div className="flex items-start justify-start space-y-4 lg:items-center lg:justify-end">
               <div className="flex items-center gap-4">
                 {portfolioData.contact.socials.map((social) => (
-                    <Link key={social.name} href={social.url} aria-label={social.name} className="text-muted-foreground transition-colors hover:text-primary" target="_blank" rel="noopener noreferrer">
+                    <Link 
+                      key={social.name} 
+                      href={social.url} 
+                      aria-label={social.name} 
+                      className={cn("text-muted-foreground transition-colors", social.hoverColor)}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <social.icon className="h-8 w-8" />
                     </Link>
                 ))}

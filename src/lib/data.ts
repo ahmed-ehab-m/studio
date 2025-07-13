@@ -3,7 +3,7 @@ import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 export const portfolioData = {
   name: "Ahmed Ehab",
-  title: "Expert Flutter Developer",
+  title: "Junior Flutter Developer",
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {
     bio: "A passionate mobile developer with experience in Flutter, constantly learning and improving. Eager to build meaningful and user-friendly apps while embracing new challenges and opportunities.",
@@ -34,22 +34,26 @@ export const portfolioData = {
       {
         name: "LinkedIn",
         url: "https://linkedin.com/in/ahmed-ehab-72052b21a",
-        icon: Linkedin
+        icon: Linkedin,
+        hoverColor: "hover:text-linkedin-blue"
       },
       {
         name: "GitHub",
         url: "https://github.com/ahmed-ehab-m",
-        icon: Github
+        icon: Github,
+        hoverColor: "hover:text-black dark:hover:text-white"
       },
        {
         name: "Email",
         url: "mailto:ahmedehab56200@gmail.com",
         icon: Mail,
+        hoverColor: "hover:text-google-red"
       },
       {
         name: "WhatsApp",
         url: "https://wa.me/201150700695", // Add your number here
         icon: WhatsAppIcon,
+        hoverColor: "hover:text-whatsapp-green"
       },
     ]
   },
@@ -65,19 +69,19 @@ export const portfolioData = {
       skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
     },
     {
-      category: "Hardware & System Integration",
-      icon: Cpu,
-      skills: ["Bluetooth", "IOT", "Notifications"]
+      category: "UI/UX & Frontend",
+      icon: Palette,
+      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
     },
-    {
+     {
       category: "Database & Local Storage",
       icon: Database,
       skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
     },
     {
-      category: "UI/UX & Frontend",
-      icon: Palette,
-      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
+      category: "Hardware & System Integration",
+      icon: Cpu,
+      skills: ["Bluetooth", "IOT", "Notifications"]
     },
     {
       category: "Development Tools & Platforms",
@@ -89,7 +93,7 @@ export const portfolioData = {
     {
       title: "Stoor",
       description: "a smart Book Store App ,Integrates an AI bot for personalized recommendations and a short 5-line summary for each one.",
-      tech: ["Flutter", "PHP Backend", "Gemini API"],
+      tech: ["Flutter","MVVM" ,  "PHP Backend", "Gemini API"],
       category: "Mobile",
       image: "/projects/pm-2/stoor.jpg",
       github: "https://github.com/ahmed-ehab-m/Stoor",
@@ -99,7 +103,7 @@ export const portfolioData = {
     {
       title: "Foot Pulse",
       description: "Health monitoring app tracks data from smart shoes, provides alerts, daily/weekly PDF reports, and bilingual (Arabic/English) medical advice.",
-      tech: ["Flutter", "Classic BlueTooth", "Local Storage"],
+      tech: ["Flutter","MVVM", "Bluetooth Classic", "Esp32"],
       category: "Mobile",
       image: "/projects/foot-pulse/footpulse.png",
       github: "#",
@@ -110,7 +114,7 @@ export const portfolioData = {
     {
       title: "AtmoSmart",
       description: "AI-powered Weather App delivers real-time weather details and a 3-day forecast, powered by  ML model (Flask API) predicting Weather's status.",
-      tech: ["Flutter", "REST APIs", "ML Model"],
+      tech: ["Flutter","Clean Architecture", "REST APIs", "ML Model"],
       category: "Mobile",
       image: "/projects/weather/2.png",
       github: "https://github.com/ahmed-ehab-m/ai_weather",
@@ -120,12 +124,22 @@ export const portfolioData = {
     {
       title: "Notes Async",
       description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
-      tech: ["Flutter", "Hive" , "Cubit"],
+      tech: ["Flutter", "Cubit" , "Cubit"],
       category: "Mobile",
       image: "/projects/notes/Notes Async (2).png",
       github: "https://github.com/ahmed-ehab-m/notes_app",
       live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_exciting-update-im-excited-to-announce-activity-7275608241701556224-3ucJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
       aiHint: "Notes Async"
+    },
+    {
+      title: "Shoe",
+      description: "A ECommerce app that allows users to browse and purchase shoes and apparel.",
+      tech: ["Flutter", "API", "Local Storage"],
+      category: "Mobile",
+      image: "/projects/shoe/Untitled design (23).png",
+      github: "https://github.com/ahmed-ehab-m/SHOE",
+      live: "https://www.linkedin.com/posts/ibrahim-meshref_flutter-mobiledevelopment-teamwork-ugcPost-7227741720627625984-A1IT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "Shoe"
     },
   ],
   certificates: [

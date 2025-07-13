@@ -48,6 +48,9 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        'whatsapp-green': '#25D366',
+        'linkedin-blue': '#0A66C2',
+        'google-red': '#DB4437',
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
