@@ -2,8 +2,8 @@ import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network }
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 export const portfolioData = {
-  name: "Ahmed Ehab",
-  title: "Junior Flutter Developer",
+  name: "Hi, I'm Ahmed Ehab",
+  title: "Junior Mobile Developer",
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {
     bio: "A passionate mobile developer with experience in Flutter, constantly learning and improving. Eager to build meaningful and user-friendly apps while embracing new challenges and opportunities.",
@@ -122,16 +122,6 @@ export const portfolioData = {
       aiHint: "AtmoSmart"
     },
     {
-      title: "Notes Async",
-      description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
-      tech: ["Flutter", "Cubit" , "Cubit"],
-      category: "Mobile",
-      image: "/projects/notes/Notes Async (2).png",
-      github: "https://github.com/ahmed-ehab-m/notes_app",
-      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_exciting-update-im-excited-to-announce-activity-7275608241701556224-3ucJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
-      aiHint: "Notes Async"
-    },
-    {
       title: "Shoe",
       description: "A ECommerce app that allows users to browse and purchase shoes and apparel.",
       tech: ["Flutter", "API", "Local Storage"],
@@ -140,6 +130,16 @@ export const portfolioData = {
       github: "https://github.com/ahmed-ehab-m/SHOE",
       live: "https://www.linkedin.com/posts/ibrahim-meshref_flutter-mobiledevelopment-teamwork-ugcPost-7227741720627625984-A1IT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
       aiHint: "Shoe"
+    },
+    {
+      title: "Notes Async",
+      description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
+      tech: ["Flutter", "Cubit" , "Cubit"],
+      category: "Mobile",
+      image: "/projects/notes/Notes Async (2).png",
+      github: "https://github.com/ahmed-ehab-m/notes_app",
+      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_exciting-update-im-excited-to-announce-activity-7275608241701556224-3ucJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "Notes Async"
     },
   ],
   certificates: [
