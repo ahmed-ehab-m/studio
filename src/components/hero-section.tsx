@@ -18,7 +18,7 @@ export function HeroSection() {
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="order-2 space-y-4 text-center md:order-1 md:text-left">
             <div className="flex items-baseline justify-center gap-2 md:justify-start">
-              <span className="text-lg font-medium text-foreground sm:text-xl">
+              <span className="text-lg font-medium text-muted-foreground sm:text-xl">
                 Hi, I'm
               </span>
               <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
