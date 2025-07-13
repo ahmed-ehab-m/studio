@@ -16,7 +16,7 @@ export function Header() {
     { href: "#skills", text: "Skills", icon: Wrench },
     { href: "#projects", text: "Projects", icon: FolderKanban },
     { href: "#certificates", text: "Certificates", icon: Award },
-    { href: "#contact", text: "Contact", icon: MessageSquare }
+    { href: "#hero", text: "Contact", icon: MessageSquare }
   ];
 
   return (

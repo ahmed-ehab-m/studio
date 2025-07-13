@@ -143,7 +143,7 @@ export const portfolioData = {
     },
   ],
   certificates: {
-    "Internships & Experience": [
+    " Experience & Internships ": [
       {
         title: "Completion of the Flutter Internship and Recommendation Letter",
         issuer: "Cellula Technologies",
