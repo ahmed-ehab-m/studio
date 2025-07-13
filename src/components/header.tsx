@@ -21,7 +21,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 flex justify-center p-4">
-      <div className="flex h-16 w-full max-w-xl items-center justify-between rounded-full bg-background/80 px-6 shadow-lg backdrop-blur-md">
+      <div className="flex h-16 w-full max-w-xl items-center justify-between rounded-3xl bg-background/80 px-6 shadow-lg backdrop-blur-md">
         <nav className="flex w-full items-center justify-center gap-4 text-sm font-medium md:gap-6">
           {navLinks.map((link) => (
             <Link 
