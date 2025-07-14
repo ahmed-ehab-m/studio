@@ -75,21 +75,22 @@ export function HeroSection() {
         <div id="about" className="mt-24 grid gap-12">
           <div className="w-full max-w-4xl mx-auto">
              <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
-            <div className="relative">
-              <div className="absolute left-1/2 h-full w-0.5 bg-secondary -translate-x-1/2"></div>
+            <div className="relative pl-6 md:pl-0">
+              <div className="absolute left-6 md:left-1/2 h-full w-0.5 bg-primary -translate-x-1/2"></div>
               
               <div className="space-y-12">
                 {journey.map((item, index) => (
                   <div key={index} className={cn(
-                    "relative flex items-center w-full",
-                    index % 2 === 0 ? "justify-start" : "justify-end"
+                    "relative flex items-start md:items-center w-full flex-col md:flex-row",
+                    index % 2 === 0 ? "md:justify-start" : "md:justify-end"
                   )}>
-                    <div className="absolute left-1/2 top-1 h-5 w-5 rounded-full bg-primary border-4 border-background flex items-center justify-center -translate-x-1/2 z-10">
+                    <div className="absolute left-6 md:left-1/2 top-1 h-5 w-5 rounded-full bg-primary border-4 border-background flex items-center justify-center -translate-x-1/2 z-10">
                        <Briefcase className="h-3 w-3 text-primary-foreground" />
                     </div>
 
                     <div className={cn(
-                      "w-[calc(50%-2.5rem)]"
+                      "w-full md:w-[calc(50%-2.5rem)]",
+                      index % 2 === 0 ? "md:order-1" : "md:order-0"
                     )}>
                       <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02]">
                          <CardHeader>
