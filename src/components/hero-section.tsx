@@ -72,7 +72,7 @@ export function HeroSection() {
           </div>
         </div>
         
-        <div id="about" className="mt-24 grid items-start justify-start gap-12 text-left">
+        <div id="about" className="mt-24 grid gap-12">
           <div className="w-full max-w-4xl mx-auto">
              <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
             <div className="relative">
