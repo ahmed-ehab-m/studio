@@ -2,6 +2,7 @@
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
 import type { LucideIcon } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 const skillsGroups = portfolioData.skills;
 
@@ -21,7 +22,7 @@ export function SkillsShowcase() {
           <div className="w-full max-w-5xl space-y-12">
             {skillsGroups.map((group) => (
               <div key={group.category} className="flex flex-col items-start gap-4 md:flex-row md:items-start md:gap-8">
-                <h3 className="w-full shrink-0 text-lg font-semibold text-muted-foreground md:w-40 md:text-left">
+                <h3 className="w-full shrink-0 text-lg font-semibold text-secondary md:w-40 md:text-left">
                   {group.category}
                 </h3>
                 <div className="flex flex-wrap justify-start gap-3">

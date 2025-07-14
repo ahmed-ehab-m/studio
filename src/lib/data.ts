@@ -105,8 +105,6 @@ export const portfolioData = {
       skills: [
         { name: "Firebase", icon: Database },
         { name: "FireStore", icon: Database },
-        { name: "Crashlytics", icon: Bug },
-        { name: "Sentry", icon: Bug },
         { name: "Hive", icon: Database },
         { name: "ObjectBox", icon: ObjectBoxIcon },
         { name: "Shared Prefs", icon: Database }
@@ -117,6 +115,8 @@ export const portfolioData = {
       icon: Wrench,
       skills: [
         { name: "Git & GitHub", icon: Github },
+        { name: "Crashlytics", icon: Bug },
+        { name: "Sentry", icon: Bug },
         { name: "VS Code", icon: Code },
         { name: "Android Studio", icon: Smartphone },
         { name: "Postman", icon: PostmanIcon },
@@ -139,7 +139,7 @@ export const portfolioData = {
     {
       title: "Stoor",
       description: "a smart Book Store App ,Integrates an AI bot for personalized recommendations and a short 5-line summary for each one.",
-      tech: ["Flutter","MVVM" ,  "PHP Backend", "Gemini API"],
+      tech: ["Flutter","MVVM" ,"Cubit",  "PHP Backend", "Gemini API"],
       category: "Mobile",
       image: "/projects/pm-2/stoor.jpg",
       github: "https://github.com/ahmed-ehab-m/Stoor",
@@ -149,7 +149,7 @@ export const portfolioData = {
     {
       title: "Foot Pulse",
       description: "Health monitoring app tracks data from smart shoes, provides alerts, daily/weekly PDF reports, and bilingual (Arabic/English) medical advice.",
-      tech: ["Flutter","MVVM", "Bluetooth Classic", "Esp32"],
+      tech: ["Flutter","Native Andriod","MVVM","Cubit", "Bluetooth Classic", "Esp32"],
       category: "Mobile",
       image: "/projects/foot-pulse/footpulse.png",
       github: "#",
@@ -160,7 +160,7 @@ export const portfolioData = {
     {
       title: "AtmoSmart",
       description: "AI-powered Weather App delivers real-time weather details and a 3-day forecast, powered by  ML model (Flask API) predicting Weather's status.",
-      tech: ["Flutter","Clean Architecture", "REST APIs", "ML Model"],
+      tech: ["Flutter","Clean Architecture","Cubit", "Weather API", "Flask API" , "Perdiction ML Model"],
       category: "Mobile",
       image: "/projects/weather/2.png",
       github: "https://github.com/ahmed-ehab-m/ai_weather",
@@ -180,7 +180,7 @@ export const portfolioData = {
     {
       title: "Notes Async",
       description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
-      tech: ["Flutter", "Cubit" , "Cubit"],
+      tech: ["Flutter", "Cubit" , "Hive"],
       category: "Mobile",
       image: "/projects/notes/Notes Async (2).png",
       github: "https://github.com/ahmed-ehab-m/notes_app",
