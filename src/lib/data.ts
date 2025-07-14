@@ -85,7 +85,7 @@ export const portfolioData = {
       category: "Core Technologies & Architecture",
       icon: Network,
       skills: [
-        { name: "Dart", icon: DartIcon },
+        { name: "Dart", icon: CodeXml },
         { name: "Flutter", icon: Smartphone },
         { name: "Bloc (Cubit)", icon: Package },
         { name: "Riverpod", icon: GitCommitHorizontal },
