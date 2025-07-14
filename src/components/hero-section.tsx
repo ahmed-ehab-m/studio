@@ -67,6 +67,7 @@ export function HeroSection() {
               data-ai-hint="professional portrait"
               priority
               quality={100}
+              unoptimized
             />
           </div>
         </div>

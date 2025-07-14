@@ -35,6 +35,7 @@ export function ProjectsGallery() {
                   height={400}
                   className="aspect-video w-full object-cover"
                   data-ai-hint={project.aiHint}
+                  unoptimized
                 />
               </CardHeader>
               <div className="flex flex-1 flex-col p-6">
