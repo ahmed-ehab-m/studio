@@ -86,7 +86,7 @@ export const portfolioData = {
       icon: Network,
       skills: [
         { name: "Dart", icon: DartIcon },
-        { name: "Flutter", icon: FlutterIcon },
+        { name: "Flutter", icon: Smartphone },
         { name: "Bloc (Cubit)", icon: Package },
         { name: "Riverpod", icon: GitCommitHorizontal },
         { name: "MVVM", icon: MvvmIcon },
