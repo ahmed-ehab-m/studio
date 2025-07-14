@@ -1,7 +1,6 @@
 "use client"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
-import { Card, CardContent } from "@/components/ui/card"
 import type { LucideIcon } from "lucide-react"
 
 const skillsGroups = portfolioData.skills;
@@ -24,7 +23,7 @@ export function SkillsShowcase() {
               {skillsGroups.flatMap((group) => group.skills).map((skill) => {
                   const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
                   return (
-                    <div key={skill.name} className="flex flex-col items-center justify-center text-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <div key={skill.name} className="flex flex-col items-center justify-center text-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors aspect-square">
                       <Icon className="h-8 w-8 text-secondary mb-2" />
                       <span className="text-sm font-medium text-muted-foreground">{skill.name}</span>
                     </div>
