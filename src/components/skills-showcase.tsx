@@ -26,7 +26,7 @@ export function SkillsShowcase() {
                   <div className="flex flex-col md:flex-row md:items-start md:gap-8">
                     {/* Category Title on the left */}
                     <div className="md:w-1/4 mb-6 md:mb-0">
-                      <h3 className="flex items-center gap-3 text-lg font-semibold text-primary">
+                      <h3 className="flex items-center gap-3 text-lg font-semibold text-secondary">
                         <group.icon className="h-6 w-6 text-secondary" />
                         <span>{group.category}</span>
                       </h3>
