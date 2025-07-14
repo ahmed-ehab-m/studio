@@ -1,8 +1,8 @@
 "use client"
-import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "./animated-section"
 import { portfolioData } from "@/lib/data"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
+import type { LucideIcon } from "lucide-react"
 
 const skillsGroups = portfolioData.skills;
 
@@ -19,20 +19,32 @@ export function SkillsShowcase() {
               A glimpse into the technologies and tools I use to bring projects to life.
             </p>
           </div>
-          <div className="grid w-full max-w-4xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="w-full max-w-5xl space-y-8">
             {skillsGroups.map((group, groupIndex) => (
-              <Card key={groupIndex} className="shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-lg text-primary">
-                    <group.icon className="h-6 w-6" />
-                    <span>{group.category}</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap justify-start gap-2">
-                    {group.skills.map((skill) => (
-                      <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm">{skill}</Badge>
-                    ))}
+              <Card key={groupIndex} className="shadow-lg overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="flex flex-col md:flex-row md:items-start md:gap-8">
+                    {/* Category Title on the left */}
+                    <div className="md:w-1/4 mb-6 md:mb-0">
+                      <h3 className="flex items-center gap-3 text-lg font-semibold text-primary">
+                        <group.icon className="h-6 w-6 text-secondary" />
+                        <span>{group.category}</span>
+                      </h3>
+                    </div>
+                    {/* Skills grid on the right */}
+                    <div className="md:w-3/4">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {group.skills.map((skill) => {
+                           const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
+                           return (
+                             <div key={skill.name} className="flex flex-col items-center justify-center text-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                               <Icon className="h-8 w-8 text-secondary mb-2" />
+                               <span className="text-sm font-medium text-muted-foreground">{skill.name}</span>
+                             </div>
+                           )
+                        })}
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
