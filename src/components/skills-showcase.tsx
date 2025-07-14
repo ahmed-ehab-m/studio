@@ -21,7 +21,7 @@ export function SkillsShowcase() {
           <div className="w-full max-w-5xl space-y-12">
             {skillsGroups.map((group) => (
               <div key={group.category} className="flex flex-col items-center gap-4 md:flex-row md:items-start md:gap-8">
-                <h3 className="w-full shrink-0 text-center text-lg font-semibold text-secondary md:w-40 md:text-right">
+                <h3 className="w-full shrink-0 text-center text-lg font-semibold text-muted-foreground md:w-40 md:text-right">
                   {group.category}
                 </h3>
                 <div className="flex flex-wrap justify-center gap-3 md:justify-start">
