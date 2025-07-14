@@ -24,7 +24,7 @@ export function SkillsShowcase() {
               <Card key={groupIndex} className="shadow-lg overflow-hidden">
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-start md:gap-8">
-                    {/* Category Title on the left */}
+                    {/* Category Icon on the left */}
                     <div className="md:w-1/4 mb-6 md:mb-0">
                       <h3 className="flex items-center justify-center md:justify-start gap-3 text-lg font-semibold text-secondary">
                         <group.icon className="h-6 w-6 text-secondary" />
@@ -32,7 +32,7 @@ export function SkillsShowcase() {
                     </div>
                     {/* Skills grid on the right */}
                     <div className="md:w-3/4">
-                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
                         {group.skills.map((skill) => {
                            const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
                            return (
