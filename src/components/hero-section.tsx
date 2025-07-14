@@ -15,9 +15,22 @@ export function HeroSection() {
   return (
     <AnimatedSection id="hero" className="pt-12 md:pt-24 lg:pt-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-16">
-          <div className="space-y-4 text-left lg:text-left">
-            <div className="flex items-baseline justify-start gap-2 lg:justify-start">
+        <div className="flex flex-col items-center gap-8 text-center">
+          <div className="flex justify-center">
+            <Image
+              src="/my_images/personalmage.jpeg"
+              width="300"
+              height="300"
+              alt={`${portfolioData.name}'s Portrait`}
+              className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
+              data-ai-hint="professional portrait"
+              priority
+              quality={100}
+              unoptimized
+            />
+          </div>
+          <div className="space-y-4">
+            <div className="flex items-baseline justify-center gap-2">
               <span className="text-lg font-medium text-muted-foreground sm:text-xl">
                 Hi, I'm
               </span>
@@ -28,10 +41,10 @@ export function HeroSection() {
             <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
               {portfolioData.title}
             </h2>
-            <p className="max-w-xl text-muted-foreground md:text-lg/relaxed lg:mx-0">
+            <p className="mx-auto max-w-xl text-muted-foreground md:text-lg/relaxed">
               {portfolioData.about.bio}
             </p>
-            <div className="flex flex-col items-start gap-4 pt-4 lg:items-start">
+            <div className="flex flex-col items-center gap-4 pt-4">
               <Button asChild variant="default" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                   <a href={portfolioData.contact.cv} download>
                       <Download className="mr-2 h-5 w-5" />
@@ -57,22 +70,9 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src="/my_images/personalmage.jpeg"
-              width="300"
-              height="300"
-              alt={`${portfolioData.name}'s Portrait`}
-              className="aspect-square overflow-hidden rounded-full object-cover shadow-lg"
-              data-ai-hint="professional portrait"
-              priority
-              quality={100}
-              unoptimized
-            />
-          </div>
         </div>
         
-        <div id="about" className="mt-24 grid items-center justify-center gap-12">
+        <div id="about" className="mt-24 grid items-start justify-start gap-12 text-left">
           <div className="w-full max-w-4xl mx-auto">
              <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">My Journey & Experience</h3>
             <div className="relative">
