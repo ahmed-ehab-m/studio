@@ -19,13 +19,13 @@ export function SkillsShowcase() {
             </p>
           </div>
           <div className="w-full max-w-5xl">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
               {skillsGroups.flatMap((group) => group.skills).map((skill) => {
                   const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
                   return (
                     <div key={skill.name} className="flex flex-col items-center justify-center text-center p-2 rounded-lg bg-muted/50 hover:bg-muted transition-colors aspect-square">
                       <Icon className="h-6 w-6 text-secondary mb-2" />
-                      <span className="text-sm font-medium text-muted-foreground">{skill.name}</span>
+                      <span className="text-xs font-medium text-muted-foreground">{skill.name}</span>
                     </div>
                   )
               })}
