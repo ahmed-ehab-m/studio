@@ -1,5 +1,14 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, MvvmIcon, CleanArchitectureIcon, Bluetooth, Bell, GitBranch, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
+import { DartIcon } from "@/components/icons/dart-icon";
+import { FlutterIcon } from "@/components/icons/flutter-icon";
+import { FirebaseIcon } from "@/components/icons/firebase-icon";
+import { HiveIcon } from "@/components/icons/hive-icon";
+import { ObjectBoxIcon } from "@/components/icons/objectbox-icon";
+import { PostmanIcon } from "@/components/icons/postman-icon";
+import { FigmaIcon } from "@/components/icons/figma-icon";
+import { GitIcon } from "@/components/icons/git-icon";
+
 
 export const portfolioData = {
   name: "Ahmed Ehab",
@@ -61,32 +70,68 @@ export const portfolioData = {
     {
       category: "Software Engineering Principles",
       icon: Code,
-      skills: ["OOP", "Data Structures", "Algorithms", "Performance Optimization", "Debugging", "Team Collaboration"]
+      skills: [
+        { name: "OOP", icon: Blocks },
+        { name: "Data Structures", icon: Binary },
+        { name: "Algorithms", icon: Waypoints },
+        { name: "Performance", icon: Rocket },
+        { name: "Debugging", icon: Bug },
+        { name: "Team Work", icon: Users }
+      ]
     },
     {
       category: "Core Technologies & Architecture",
       icon: Network,
-      skills: ["Dart", "Flutter", "Bloc (Cubit)", "Riverpod", "MVVM", "Clean Architecture"]
+      skills: [
+        { name: "Dart", icon: DartIcon },
+        { name: "Flutter", icon: FlutterIcon },
+        { name: "Bloc (Cubit)", icon: Package },
+        { name: "Riverpod", icon: GitCommitHorizontal },
+        { name: "MVVM", icon: MvvmIcon },
+        { name: "Clean Arch", icon: CleanArchitectureIcon }
+      ]
     },
     {
       category: "Hardware & System Integration",
       icon: Cpu,
-      skills: ["Bluetooth", "IOT", "Notifications"]
+      skills: [
+        { name: "Bluetooth", icon: Bluetooth },
+        { name: "IOT", icon: Cpu },
+        { name: "Notifications", icon: Bell }
+      ]
     },
     {
       category: "UI/UX & Frontend",
       icon: Palette,
-      skills: ["Animations", "Dynamic Theming", "UI/UX Design", "Responsive UI"]
+      skills: [
+        { name: "Animations", icon: "svg" },
+        { name: "Dynamic Theme", icon: Palette },
+        { name: "UI/UX Design", icon: "svg" },
+        { name: "Responsive UI", icon: Smartphone }
+      ]
     },
      {
       category: "Database & Local Storage",
       icon: Database,
-      skills: ["Firebase", "Hive", "ObjectBox", "Shared Preferences"]
+      skills: [
+        { name: "Firebase", icon: FirebaseIcon },
+        { name: "Hive", icon: HiveIcon },
+        { name: "ObjectBox", icon: ObjectBoxIcon },
+        { name: "Shared Prefs", icon: FileJson }
+      ]
     },
     {
       category: "Development Tools & Platforms",
       icon: Wrench,
-      skills: ["REST APIs", "Git", "GitHub", "VS Code", "Android Studio", "Postman", "Figma"]
+      skills: [
+        { name: "REST APIs", icon: CodeXml },
+        { name: "Git", icon: GitIcon },
+        { name: "GitHub", icon: Github },
+        { name: "VS Code", icon: "svg" },
+        { name: "Android Studio", icon: "svg" },
+        { name: "Postman", icon: PostmanIcon },
+        { name: "Figma", icon: FigmaIcon }
+      ]
     }
   ],
   projects: [
