@@ -1,9 +1,8 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork, Languages } from "lucide-react";
 import { MvvmIcon } from "@/components/icons/mvvm-icon";
 import { CleanArchitectureIcon } from "@/components/icons/clean-architecture-icon";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { FlutterIcon } from "@/components/icons/flutter-icon";
-import { FirebaseIcon } from "@/components/icons/firebase-icon";
 import { HiveIcon } from "@/components/icons/hive-icon";
 import { ObjectBoxIcon } from "@/components/icons/objectbox-icon";
 import { PostmanIcon } from "@/components/icons/postman-icon";
@@ -78,7 +77,7 @@ export const portfolioData = {
         { name: "Riverpod", icon: GitCommitHorizontal },
         { name: "MVVM", icon: MvvmIcon },
         { name: "Clean Arch", icon: CleanArchitectureIcon },
-        { name: "Localization", icon: CleanArchitectureIcon },
+        { name: "Localization", icon: Languages },
         { name: "Rest API", icon: CodeXml }
       ]
     },
