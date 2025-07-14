@@ -104,9 +104,9 @@ export const portfolioData = {
       category: "Database & Local Storage",
       icon: Database,
       skills: [
-        { name: "Firebase", icon: FirebaseIcon },
-        { name: "FireStore", icon: FirebaseIcon },
-        { name: "Crashlytics", icon: FirebaseIcon },
+        { name: "Firebase", icon: Database },
+        { name: "FireStore", icon: Database },
+        { name: "Crashlytics", icon: Database },
         { name: "Sentry", icon: Database },
         { name: "Hive", icon: HiveIcon },
         { name: "ObjectBox", icon: ObjectBoxIcon },
