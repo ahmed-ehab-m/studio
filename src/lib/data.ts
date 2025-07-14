@@ -1,4 +1,6 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, MvvmIcon, CleanArchitectureIcon, Bluetooth, Bell, GitBranch, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork } from "lucide-react";
+import { MvvmIcon } from "@/components/icons/mvvm-icon";
+import { CleanArchitectureIcon } from "@/components/icons/clean-architecture-icon";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { DartIcon } from "@/components/icons/dart-icon";
 import { FlutterIcon } from "@/components/icons/flutter-icon";
