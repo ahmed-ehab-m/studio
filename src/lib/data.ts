@@ -2,14 +2,12 @@ import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, 
 import { MvvmIcon } from "@/components/icons/mvvm-icon";
 import { CleanArchitectureIcon } from "@/components/icons/clean-architecture-icon";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
-import { DartIcon } from "@/components/icons/dart-icon";
 import { FlutterIcon } from "@/components/icons/flutter-icon";
 import { FirebaseIcon } from "@/components/icons/firebase-icon";
 import { HiveIcon } from "@/components/icons/hive-icon";
 import { ObjectBoxIcon } from "@/components/icons/objectbox-icon";
 import { PostmanIcon } from "@/components/icons/postman-icon";
 import { FigmaIcon } from "@/components/icons/figma-icon";
-import { GitIcon } from "@/components/icons/git-icon";
 
 
 export const portfolioData = {
@@ -109,7 +107,7 @@ export const portfolioData = {
         { name: "Firebase", icon: FirebaseIcon },
         { name: "FireStore", icon: FirebaseIcon },
         { name: "Crashlytics", icon: FirebaseIcon },
-        { name: "Sentry", icon: FirebaseIcon },
+        { name: "Sentry", icon: Database },
         { name: "Hive", icon: HiveIcon },
         { name: "ObjectBox", icon: ObjectBoxIcon },
         { name: "Shared Prefs", icon: FileJson }
@@ -119,8 +117,7 @@ export const portfolioData = {
       category: "Development Tools & Platforms",
       icon: Wrench,
       skills: [
-        { name: "Git", icon: GitIcon },
-        { name: "GitHub", icon: Github },
+        { name: "Git & GitHub", icon: Github },
         { name: "VS Code", icon: Code },
         { name: "Android Studio", icon: Smartphone },
         { name: "Postman", icon: PostmanIcon },
