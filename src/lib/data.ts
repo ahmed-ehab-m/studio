@@ -107,9 +107,9 @@ export const portfolioData = {
         { name: "FireStore", icon: Database },
         { name: "Crashlytics", icon: Bug },
         { name: "Sentry", icon: Bug },
-        { name: "Hive", icon: HiveIcon },
+        { name: "Hive", icon: Database },
         { name: "ObjectBox", icon: ObjectBoxIcon },
-        { name: "Shared Prefs", icon: FileJson }
+        { name: "Shared Prefs", icon: Database }
       ]
     },
     {
