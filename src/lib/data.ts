@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork, Languages } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork, Languages, Camera, SmartphoneNfc } from "lucide-react";
 import { MvvmIcon } from "@/components/icons/mvvm-icon";
 import { CleanArchitectureIcon } from "@/components/icons/clean-architecture-icon";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
@@ -87,7 +87,9 @@ export const portfolioData = {
       skills: [
         { name: "Bluetooth", icon: Bluetooth },
         { name: "IOT", icon: Cpu },
-        { name: "Notifications", icon: Bell }
+        { name: "Notifications", icon: Bell },
+        { name: "Camera", icon: Camera },
+        { name: "Vibration", icon: SmartphoneNfc }
       ]
     },
     {
