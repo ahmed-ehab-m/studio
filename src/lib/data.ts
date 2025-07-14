@@ -75,8 +75,8 @@ export const portfolioData = {
         { name: "Flutter", icon: Smartphone },
         { name: "Bloc (Cubit)", icon: Package },
         { name: "Riverpod", icon: GitCommitHorizontal },
-        { name: "MVVM", icon: MvvmIcon },
-        { name: "Clean Arch", icon: CleanArchitectureIcon },
+        { name: "MVVM", icon: Layers },
+        { name: "Clean Arch", icon: Network },
         { name: "Localization", icon: Languages },
         { name: "Rest API", icon: CodeXml }
       ]
