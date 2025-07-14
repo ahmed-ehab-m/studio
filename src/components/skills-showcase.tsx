@@ -23,8 +23,8 @@ export function SkillsShowcase() {
               {skillsGroups.flatMap((group) => group.skills).map((skill) => {
                   const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
                   return (
-                    <div key={skill.name} className="flex flex-col items-center justify-center text-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors aspect-square">
-                      <Icon className="h-8 w-8 text-secondary mb-2" />
+                    <div key={skill.name} className="flex flex-col items-center justify-center text-center p-2 rounded-lg bg-muted/50 hover:bg-muted transition-colors aspect-square">
+                      <Icon className="h-6 w-6 text-secondary mb-2" />
                       <span className="text-sm font-medium text-muted-foreground">{skill.name}</span>
                     </div>
                   )
