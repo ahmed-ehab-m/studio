@@ -28,7 +28,7 @@ export const portfolioData = {
   },
   contact: {
     email: "ahmedehab56200@gmail.com",
-    cv: "/cv/Ahmed Ehab - Mobile Developer.pdf",
+    cv: "/cv/Ahmed_Ehab_Mobile_Developer.pdf",
     whatsapp: "201140590860", // Add your number here without '+' or '00'
     socials: [
       {
