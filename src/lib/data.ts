@@ -69,18 +69,7 @@ export const portfolioData = {
     ]
   },
   skills: [
-    {
-      category: "Software Engineering Principles",
-      icon: Code,
-      skills: [
-        { name: "OOP", icon: Blocks },
-        { name: "Data Structures", icon: Binary },
-        { name: "Algorithms", icon: Waypoints },
-        { name: "Performance", icon: Rocket },
-        { name: "Debugging", icon: Bug },
-        { name: "Team Work", icon: Users }
-      ]
-    },
+  
     {
       category: "Core Technologies & Architecture",
       icon: Network,
@@ -90,7 +79,9 @@ export const portfolioData = {
         { name: "Bloc (Cubit)", icon: Package },
         { name: "Riverpod", icon: GitCommitHorizontal },
         { name: "MVVM", icon: MvvmIcon },
-        { name: "Clean Arch", icon: CleanArchitectureIcon }
+        { name: "Clean Arch", icon: CleanArchitectureIcon },
+        { name: "Localization", icon: CleanArchitectureIcon },
+        { name: "Rest API", icon: CodeXml }
       ]
     },
     {
@@ -108,7 +99,6 @@ export const portfolioData = {
       skills: [
         { name: "Animations", icon: Layers },
         { name: "Dynamic Theme", icon: Palette },
-        { name: "UI/UX Design", icon: PenTool },
         { name: "Responsive UI", icon: Smartphone }
       ]
     },
@@ -117,6 +107,9 @@ export const portfolioData = {
       icon: Database,
       skills: [
         { name: "Firebase", icon: FirebaseIcon },
+        { name: "FireStore", icon: FirebaseIcon },
+        { name: "Crashlytics", icon: FirebaseIcon },
+        { name: "Sentry", icon: FirebaseIcon },
         { name: "Hive", icon: HiveIcon },
         { name: "ObjectBox", icon: ObjectBoxIcon },
         { name: "Shared Prefs", icon: FileJson }
@@ -126,7 +119,6 @@ export const portfolioData = {
       category: "Development Tools & Platforms",
       icon: Wrench,
       skills: [
-        { name: "REST APIs", icon: CodeXml },
         { name: "Git", icon: GitIcon },
         { name: "GitHub", icon: Github },
         { name: "VS Code", icon: Code },
@@ -134,7 +126,18 @@ export const portfolioData = {
         { name: "Postman", icon: PostmanIcon },
         { name: "Figma", icon: FigmaIcon }
       ]
-    }
+    },
+    {
+      category: "Software Engineering Principles",
+      icon: Code,
+      skills: [
+        { name: "OOP", icon: Blocks },
+        { name: "Data Structures", icon: Binary },
+        { name: "Algorithms", icon: Waypoints },
+        { name: "Debugging", icon: Bug },
+      ]
+    },
+
   ],
   projects: [
     {
