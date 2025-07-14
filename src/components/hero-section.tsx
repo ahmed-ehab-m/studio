@@ -111,7 +111,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div id="about" className="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8">
+        <div id="about" className="mt-24 grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-8">
           <Timeline items={education} title="My Education" icon={GraduationCap} />
           <Timeline items={experience} title="My Experience" icon={Briefcase} />
         </div>
