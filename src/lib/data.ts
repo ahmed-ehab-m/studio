@@ -105,8 +105,8 @@ export const portfolioData = {
       skills: [
         { name: "Firebase", icon: Database },
         { name: "FireStore", icon: Database },
-        { name: "Crashlytics", icon: Database },
-        { name: "Sentry", icon: Database },
+        { name: "Crashlytics", icon: Bug },
+        { name: "Sentry", icon: Bug },
         { name: "Hive", icon: HiveIcon },
         { name: "ObjectBox", icon: ObjectBoxIcon },
         { name: "Shared Prefs", icon: FileJson }
