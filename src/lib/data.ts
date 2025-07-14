@@ -11,12 +11,12 @@ export const portfolioData = {
       {
         title: "Freelancer Flutter Developer",
         period: "Feb 2025 - Apr 2025",
-        description: "Collaborated with a team of 2 embedded systems engineers to integrate IoT solutions."
+        description: "Collaborated with a team of embedded systems engineers to integrate IoT solutions, successfully leading the development of a single IoT project."
       },
       {
         title: "Internship at Cellula Technologies",
         period: "Feb 2025 - Apr 2025",
-        description: "Developed two AI-integrated projects under mentorship, using Agile methodologies and Trello for task management"
+        description: "Developed 2 AI-integrated projects under mentorship, using Agile methodologies and Trello for task management"
       },
       {
         title: "Flutter Developer Summer Internship, ITI",

@@ -34,11 +34,11 @@ export function HeroSection() {
               <span className="text-lg font-medium text-muted-foreground sm:text-xl">
                 Hi, I'm
               </span>
-              <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                 {portfolioData.name}
               </h1>
             </div>
-            <h2 className="font-headline text-4xl font-bold tracking-tighter text-secondary sm:text-5xl md:text-6xl">
+            <h2 className="font-headline text-10xl font-bold tracking-tighter text-secondary sm:text-6xl md:text-7xl">
               {portfolioData.title}
             </h2>
             <p className="mx-auto max-w-xl text-muted-foreground md:text-lg/relaxed">
@@ -112,3 +112,4 @@ export function HeroSection() {
     </AnimatedSection>
   )
 }
+
