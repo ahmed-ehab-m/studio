@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, MvvmIcon, CleanArchitectureIcon, Bluetooth, Bell, GitBranch, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, MvvmIcon, CleanArchitectureIcon, Bluetooth, Bell, GitBranch, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { DartIcon } from "@/components/icons/dart-icon";
 import { FlutterIcon } from "@/components/icons/flutter-icon";
@@ -104,9 +104,9 @@ export const portfolioData = {
       category: "UI/UX & Frontend",
       icon: Palette,
       skills: [
-        { name: "Animations", icon: "svg" },
+        { name: "Animations", icon: Layers },
         { name: "Dynamic Theme", icon: Palette },
-        { name: "UI/UX Design", icon: "svg" },
+        { name: "UI/UX Design", icon: PenTool },
         { name: "Responsive UI", icon: Smartphone }
       ]
     },
@@ -127,8 +127,8 @@ export const portfolioData = {
         { name: "REST APIs", icon: CodeXml },
         { name: "Git", icon: GitIcon },
         { name: "GitHub", icon: Github },
-        { name: "VS Code", icon: "svg" },
-        { name: "Android Studio", icon: "svg" },
+        { name: "VS Code", icon: Code },
+        { name: "Android Studio", icon: Smartphone },
         { name: "Postman", icon: PostmanIcon },
         { name: "Figma", icon: FigmaIcon }
       ]
