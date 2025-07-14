@@ -18,18 +18,23 @@ export function SkillsShowcase() {
               A glimpse into the technologies and tools I use to bring projects to life.
             </p>
           </div>
-          <div className="w-full max-w-5xl space-y-8">
+          <div className="w-full max-w-5xl space-y-12">
             {skillsGroups.map((group) => (
-              <div key={group.category} className="flex flex-wrap justify-center gap-4">
-                {group.skills.map((skill) => {
-                  const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
-                  return (
-                    <div key={skill.name} className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-muted/50 p-2 text-center transition-colors hover:bg-muted">
-                      <Icon className="h-8 w-8 text-secondary mb-2" />
-                      <span className="text-xs font-medium text-muted-foreground">{skill.name}</span>
-                    </div>
-                  )
-                })}
+              <div key={group.category} className="flex flex-col items-center gap-4 md:flex-row md:items-start md:gap-8">
+                <h3 className="w-full shrink-0 text-center text-lg font-semibold text-secondary md:w-40 md:text-right">
+                  {group.category}
+                </h3>
+                <div className="flex flex-wrap justify-center gap-3 md:justify-start">
+                  {group.skills.map((skill) => {
+                    const Icon = skill.icon as LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
+                    return (
+                      <div key={skill.name} className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-muted/50 p-2 text-center transition-colors hover:bg-muted">
+                        <Icon className="h-8 w-8 text-secondary mb-2" />
+                        <span className="text-xs font-medium text-muted-foreground">{skill.name}</span>
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             ))}
           </div>
