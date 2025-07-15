@@ -10,41 +10,48 @@ import { Download, Briefcase, GraduationCap } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-interface TimelineItem {
-  title: string;
-  period: string;
-  description: string;
-}
-
-interface TimelineProps {
-  items: TimelineItem[];
-  title: string;
+interface TimelineItemProps {
+  item: {
+    title: string;
+    period: string;
+    description: string;
+  };
   icon: LucideIcon;
+  side: "left" | "right";
 }
 
-const Timeline = ({ items, title, icon: Icon }: TimelineProps) => (
-  <div className="w-full">
-    <h3 className="font-headline text-2xl font-bold tracking-tighter text-primary sm:text-3xl text-center mb-12">{title}</h3>
-    <div className="relative pl-6 after:absolute after:inset-y-0 after:w-0.5 after:bg-primary after:left-6">
-      <div className="space-y-12">
-        {items.map((item, index) => (
-          <div key={index} className="relative pl-8">
-            <div className="absolute left-6 top-1 h-5 w-5 rounded-full bg-primary border-4 border-background flex items-center justify-center -translate-x-1/2 z-10">
-              <Icon className="h-3 w-3 text-primary-foreground" />
-            </div>
-            <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02]">
-              <CardHeader>
-                <CardTitle className="text-lg font-bold text-secondary">{item.title}</CardTitle>
-                <CardDescription className="text-sm text-accent font-semibold pt-1">{item.period}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{item.description}</p>
-              </CardContent>
-            </Card>
-          </div>
-        ))}
+const TimelineItem = ({ item, icon: Icon, side }: TimelineItemProps) => (
+  <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-x-6">
+    {side === 'left' ? (
+      <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02] col-start-1 text-right">
+        <CardHeader>
+          <CardTitle className="text-lg font-bold text-secondary">{item.title}</CardTitle>
+          <CardDescription className="text-sm text-accent font-semibold pt-1">{item.period}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">{item.description}</p>
+        </CardContent>
+      </Card>
+    ) : <div className="col-start-1"></div>}
+
+    <div className="col-start-2 flex h-full w-full items-center justify-center">
+      <div className="h-full w-0.5 bg-primary/20" />
+      <div className="absolute z-10 flex h-8 w-8 items-center justify-center rounded-full bg-primary">
+        <Icon className="h-4 w-4 text-primary-foreground" />
       </div>
     </div>
+
+    {side === 'right' ? (
+      <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02] col-start-3 text-left">
+        <CardHeader>
+          <CardTitle className="text-lg font-bold text-secondary">{item.title}</CardTitle>
+          <CardDescription className="text-sm text-accent font-semibold pt-1">{item.period}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">{item.description}</p>
+        </CardContent>
+      </Card>
+    ) : <div className="col-start-3"></div>}
   </div>
 );
 
@@ -111,10 +118,22 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div id="about" className="mt-24 grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-8">
-          <Timeline items={education} title="My Education" icon={GraduationCap} />
-          <Timeline items={experience} title="My Experience" icon={Briefcase} />
-        </div>
+        <div id="about" className="mt-24 w-full">
+            <div className="relative mx-auto max-w-5xl">
+              <div className="mb-12 text-center">
+                <h3 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl">My Journey</h3>
+                <p className="mt-2 text-muted-foreground">My education and professional experience timeline.</p>
+              </div>
+              <div className="space-y-12">
+                {education.map((item, index) => (
+                  <TimelineItem key={`edu-${index}`} item={item} icon={GraduationCap} side="left" />
+                ))}
+                {experience.map((item, index) => (
+                  <TimelineItem key={`exp-${index}`} item={item} icon={Briefcase} side="right" />
+                ))}
+              </div>
+            </div>
+          </div>
       </div>
     </AnimatedSection>
   )
