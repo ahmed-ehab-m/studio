@@ -21,7 +21,7 @@ interface TimelineItemProps {
 }
 
 const TimelineItem = ({ item, icon: Icon, side }: TimelineItemProps) => (
-  <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-x-6 relative">
+  <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-x-6 relative md:grid">
     {side === 'left' ? (
       <Card className="shadow-lg transition-transform duration-300 hover:scale-[1.02] col-start-1 text-right">
         <CardHeader>
@@ -123,7 +123,7 @@ export function HeroSection() {
                 <h3 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl">My Journey</h3>
                 <p className="mt-2 text-muted-foreground">My education and professional experience timeline.</p>
               </div>
-              <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 transform bg-primary/20" />
+              <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 transform bg-border" />
               <div className="space-y-12">
                 {education.map((item, index) => (
                   <TimelineItem key={`edu-${index}`} item={item} icon={GraduationCap} side="left" />
