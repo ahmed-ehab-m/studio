@@ -38,7 +38,7 @@ export function HeroSection() {
                 {portfolioData.name}
               </h1>
             </div>
-            <h2 className="font-headline text-10xl font-bold tracking-tighter text-secondary sm:text-6xl md:text-7xl">
+            <h2 className="font-headline text-5xl font-bold tracking-tighter text-secondary sm:text-6xl md:text-7xl">
               {portfolioData.title}
             </h2>
             <p className="mx-auto max-w-xl text-muted-foreground md:text-lg/relaxed">
