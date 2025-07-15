@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork, Languages, Camera, SmartphoneNfc, GraduationCap } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Database, Palette, Cpu, Wrench, Network, Smartphone, Package, Layers, Bluetooth, Bell, CodeXml, Bug, Users, Waypoints, Rocket, Binary, Blocks, FileJson, GitCommitHorizontal, PenTool, GitFork, Languages, Camera, SmartphoneNfc } from "lucide-react";
 import { MvvmIcon } from "@/components/icons/mvvm-icon";
 import { CleanArchitectureIcon } from "@/components/icons/clean-architecture-icon";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
@@ -32,18 +32,6 @@ export const portfolioData = {
         description: "Improved code quality by applying instructor feedback, resulting in cleaner and more maintainable codebases."
       },
       
-    ],
-    education: [
-       {
-        title: "Bachelor of Engineering in Computer Engineering",
-        period: "2020 - 2025",
-        description: "Studied at Obour High Institute for Engineering and Technology, focusing on software development principles and computer science fundamentals."
-      },
-       {
-        title: "High School Diploma",
-        period: "2017 - 2020",
-        description: "Graduated from Al-Mostaqbal Language School with a focus on mathematics and science."
-      }
     ]
   },
   contact: {
