@@ -109,7 +109,9 @@ export const portfolioData = {
         { name: "FireStore", icon: Database },
         { name: "Hive", icon: Database },
         { name: "ObjectBox", icon: ObjectBoxIcon },
-        { name: "Shared Prefs", icon: Database }
+        { name: "Shared Prefs", icon: Database },
+        { name: "Pagination", icon: FileJson }
+
       ]
     },
     {
@@ -206,6 +208,12 @@ export const portfolioData = {
       },
     ],
     "Online Courses": [
+       {
+        title: "Deep Dive into Clean Architecture in Flutter[Arabic]",
+        issuer: "Udemy",
+        date: "July 2025",
+        url: "https://drive.google.com/file/d/1QWjjvcPr8eVv3T222XWgj260fnAfeMO3/view?usp=drive_link",
+      },
       {
         title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic]",
         issuer: "Udemy",
