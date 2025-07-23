@@ -118,6 +118,7 @@ export const portfolioData = {
       category: "Development Tools & Platforms",
       icon: Wrench,
       skills: [
+        { name: "Flutter Flow", icon: Rocket },
         { name: "Git & GitHub", icon: Github },
         { name: "Crashlytics", icon: Bug },
         { name: "Sentry", icon: Bug },
