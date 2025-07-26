@@ -14,29 +14,31 @@ export const portfolioData = {
   title: "Junior Mobile Developer",
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {
-    bio: "A passionate mobile developer with experience in Flutter, constantly learning and improving. Eager to build meaningful and user-friendly apps while embracing new challenges and opportunities.",
+    bio: "A passionate mobile developer with hands-on experience in Flutter, gained through internships, freelance projects, and real-world apps. Continuously learning and driven to build scalable, user-centered mobile experiences.",
+
+
     experience: [
       {
         title: "Freelancer Flutter Developer",
         period: "Feb 2025 - Apr 2025",
-        description: "Collaborated with a team of embedded systems engineers to integrate IoT solutions, successfully leading the development of a single IoT project."
+        description: "Engineered IOT health-monitoring project using Flutter and Bluetooth Classic, achieving a successful launch and improving device connectivity reliability by 20% with embedded team support."
       },
       {
         title: "Internship at Cellula Technologies",
         period: "Feb 2025 - Apr 2025",
-        description: "Developed 2 AI-integrated projects under mentorship, using Agile methodologies and Trello for task management"
+        description: "Developed two AI-integrated projects using Flutter and ML models under Agile methodology."
       },
       {
         title: "Flutter Developer Summer Internship, ITI",
         period: "Summer 2023",
-        description: "Improved code quality by applying instructor feedback, resulting in cleaner and more maintainable codebases."
+        description: "Increased code quality by incorporating instructor feedback, resulting in cleaner and more maintainable codebases."
       },
       
     ]
   },
   contact: {
     email: "ahmedehab56200@gmail.com",
-    cv: "/cv/Ahmed_Ehab_Mobile_Developer.pdf",
+    cv: "/cv/Ahmed_ehab_mobile_developer.pdf",
     whatsapp: "201140590860", // Add your number here without '+' or '00'
     socials: [
       {
@@ -154,7 +156,7 @@ export const portfolioData = {
     {
       title: "Foot Pulse",
       description: "Health monitoring app tracks data from smart shoes, provides alerts, daily/weekly PDF reports, and bilingual (Arabic/English) medical advice.",
-      tech: ["Flutter","Native Andriod","MVVM","Cubit", "Bluetooth Classic", "Esp32"],
+      tech: ["Flutter","Native Andriod","MVVM","Cubit", "Classic Bluetooth", "PDF", "Background service","Firebase Crashlytics","Sentry"],
       category: "Mobile",
       image: "/projects/foot-pulse/footpulse.png",
       github: "#",
@@ -165,10 +167,10 @@ export const portfolioData = {
     {
       title: "AtmoSmart",
       description: "AI-powered Weather App delivers real-time weather details and a 3-day forecast, powered by  ML model (Flask API) predicting Weather's status.",
-      tech: ["Flutter","Clean Architecture","Cubit", "Weather API", "Flask API" , "Perdiction ML Model"],
+      tech: ["Flutter","Clean Architecture","Cubit", "Weather API", "Flask API" , "Firebase"],
       category: "Mobile",
       image: "/projects/weather/2.png",
-      github: "https://github.com/ahmed-ehab-m/ai_weather",
+      github: "https://github.com/ahmed-ehab-m/AtmoSmart/tree/main",
       live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_flutter-machinelearning-weatherapp-activity-7309598069816201216-JRlP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
       aiHint: "AtmoSmart"
     },
@@ -183,14 +185,24 @@ export const portfolioData = {
       aiHint: "Shoe"
     },
     {
-      title: "Notes Async",
+      title: "Notes App",
       description: "A personal portfolio website showcasing projects and skills, developed using Flutter Web for a smooth, app-like feel.",
       tech: ["Flutter", "Cubit" , "Hive"],
       category: "Mobile",
-      image: "/projects/notes/Notes Async (2).png",
+      image: "/projects/notes/Notes Async (3).png",
       github: "https://github.com/ahmed-ehab-m/notes_app",
       live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_exciting-update-im-excited-to-announce-activity-7275608241701556224-3ucJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
       aiHint: "Notes Async"
+    },
+    {
+      title: "Mirror Me",
+      description: "An E-Commerce app that lets users select a t-shirt design and a model, merging the images for a personalized experience.",
+      tech: ["Flutter", "Cubit" , "Flask API", "FireBase"],
+      category: "Mobile",
+      image: "projects/mirrorMe/Untitled design (27).png",
+      github: "https://github.com/ahmed-ehab-m/MirrorMeFinal",
+      live: "https://www.linkedin.com/posts/ahmed-ehab-72052b21a_%D8%AA%D8%AE%D9%8A%D9%84-%D8%B5%D8%A7%D8%AD%D8%A8%D9%83-%D8%A7%D9%84%D9%85%D8%AB%D9%82%D9%81-%D8%A8%D9%8A%D8%B1%D8%B4%D8%AD%D9%84%D9%83-%D8%AA%D9%82%D8%B1%D8%A7-%D8%A5%D9%8A%D9%87-%D8%A8%D8%B3-%D8%B5%D8%A7%D8%AD%D8%A8%D9%83-activity-7348699655431454720-ioN_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdATEgBfSBwLj8aInXLm-FvYMUWVWh6YbE",
+      aiHint: "Mirror Me"
     },
   ],
   certificates: {
