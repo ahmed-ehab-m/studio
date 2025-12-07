@@ -14,7 +14,7 @@ export const portfolioData = {
   title: "Junior Mobile Developer",
   description: "I build beautiful, high-performance mobile applications with Flutter, transforming ideas into reality.",
   about: {
-    bio: "A passionate mobile developer with hands-on experience in Flutter, gained through internships, freelance projects, and real-world apps. Continuously learning and driven to build scalable, user-centered mobile experiences.",
+    bio: "Junior Mobile Developer, with a Bachelor’s in Computer Science  from Benha University. Skilled in Flutter with State Management (Bloc), Clean Architecture, and REST APIs. Seeking opportunities with innovative companies.",
 
 
     experience: [
